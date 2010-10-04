@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE definition SYSTEM "./utterances.dtd">
+<definition>
+
+  <utterance>
+    <specification>
+     Was halten Sie davon, jetzt eine Übung zu machen?
+    </specification>
+  </utterance>
+
+</definition>

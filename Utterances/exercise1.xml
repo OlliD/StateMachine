@@ -1,0 +1,507 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE definition SYSTEM "./utterances.dtd">
+<definition>
+
+  <utterance>
+    <specification>
+     Wir heben beide Arme und<time id="t1"/> strecken den rechten <time id="t2"/>soweit wir können. Dann senken wir den Arm <time id="t3"/>und strecken den linken <time id="t4"/>. Diese Bewegung <time id="t5"/>wiederholen wir zehn <time id="t6"/>Mal mit jedem Arm. Wenn wir fertig sind senken wir langsam die Arme.
+    </specification>
+
+    <behaviorspec>
+      <gesture scope="body">
+        <constraints>
+          <keyframing scope="body" mode="spline" easescale="8.0" easeturningpoint="0.5">
+	    <phase>
+	     <affiliate onset="t1" end="t2"/>
+	      <frame ftime="0.3">
+		<posture>
+		  Humanoid  (Bip01_R_Forearm 3 -22 -15 0) (Bip01_R_UpperArm 3 -40 16 -1)(Bip01_L_Forearm 3 13 -8 0) (Bip01_L_UpperArm 3 48 2 21)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.5">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 -14 -10 0) (Bip01_R_UpperArm 3 0 -4 25) (Bip01_L_Forearm 3 0 -48 0) (Bip01_L_UpperArm 3 47 9 -16) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.6">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 -6 -5 0) (Bip01_R_UpperArm 3 45 -1 45) (Bip01_L_Forearm 3 0 -88 0) (Bip01_L_UpperArm 3 44 9 -53) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.8">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 0 0) (Bip01_R_UpperArm 3 90 1 65) (Bip01_L_Forearm 3 0 -130 0) (Bip01_L_UpperArm 3 40 9 -90) 
+		</posture> 
+	      </frame>
+	    </phase> 
+	    <phase>
+	     <affiliate onset="t3" end="t4"/>
+	      <frame ftime="0.2">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 0 0) (Bip01_R_UpperArm 3 90 1 65) (Bip01_L_Forearm 3 0 -130 0) (Bip01_L_UpperArm 3 40 9 -90)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.4"> 
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -40 0) (Bip01_R_UpperArm 3 45 1 74) (Bip01_L_Forearm 3 0 -85 0) (Bip01_L_UpperArm 3 0 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.6">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -80 0) (Bip01_R_UpperArm 3 0 1 83) (Bip01_L_Forearm 3 0 -50 0) (Bip01_L_UpperArm 3 -40 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.8">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -130 0) (Bip01_R_UpperArm 3 -32 1 90) (Bip01_L_Forearm 3 0 -7 0) (Bip01_L_UpperArm 3 -80 3 -90) 
+		</posture> 
+	      </frame>
+	    </phase>
+	    <phase>
+	     <affiliate onset="t5" end="t6"/>
+	      <frame ftime="0.2">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -130 0) (Bip01_R_UpperArm 3 -32 1 90) (Bip01_L_Forearm 3 0 -7 0) (Bip01_L_UpperArm 3 -80 3 -90)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.4"> 
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -80 0) (Bip01_R_UpperArm 3 0 1 83) (Bip01_L_Forearm 3 0 -50 0) (Bip01_L_UpperArm 3 -40 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.6">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -40 0) (Bip01_R_UpperArm 3 45 1 74) (Bip01_L_Forearm 3 0 -85 0) (Bip01_L_UpperArm 3 0 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.8">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 0 0) (Bip01_R_UpperArm 3 90 1 65) (Bip01_L_Forearm 3 0 -130 0) (Bip01_L_UpperArm 3 40 9 -90) 
+		</posture> 
+	      </frame>
+	    </phase>
+	    <phase>
+	      <frame ftime="0.2">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 0 0) (Bip01_R_UpperArm 3 90 1 65) (Bip01_L_Forearm 3 0 -130 0) (Bip01_L_UpperArm 3 40 9 -90)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.4"> 
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -40 0) (Bip01_R_UpperArm 3 45 1 74) (Bip01_L_Forearm 3 0 -85 0) (Bip01_L_UpperArm 3 0 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.6">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -80 0) (Bip01_R_UpperArm 3 0 1 83) (Bip01_L_Forearm 3 0 -50 0) (Bip01_L_UpperArm 3 -40 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.8">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -130 0) (Bip01_R_UpperArm 3 -32 1 90) (Bip01_L_Forearm 3 0 -7 0) (Bip01_L_UpperArm 3 -80 3 -90) 
+		</posture> 
+	      </frame>
+	    </phase>
+	    <phase>
+	      <frame ftime="0.2">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -130 0) (Bip01_R_UpperArm 3 -32 1 90) (Bip01_L_Forearm 3 0 -7 0) (Bip01_L_UpperArm 3 -80 3 -90)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.4"> 
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -80 0) (Bip01_R_UpperArm 3 0 1 83) (Bip01_L_Forearm 3 0 -50 0) (Bip01_L_UpperArm 3 -40 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.6">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -40 0) (Bip01_R_UpperArm 3 45 1 74) (Bip01_L_Forearm 3 0 -85 0) (Bip01_L_UpperArm 3 0 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.8">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 0 0) (Bip01_R_UpperArm 3 90 1 65) (Bip01_L_Forearm 3 0 -130 0) (Bip01_L_UpperArm 3 40 9 -90) 
+		</posture> 
+	      </frame>
+	    </phase>
+	    <phase>
+	      <frame ftime="0.2">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 0 0) (Bip01_R_UpperArm 3 90 1 65) (Bip01_L_Forearm 3 0 -130 0) (Bip01_L_UpperArm 3 40 9 -90)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.4"> 
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -40 0) (Bip01_R_UpperArm 3 45 1 74) (Bip01_L_Forearm 3 0 -85 0) (Bip01_L_UpperArm 3 0 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.6">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -80 0) (Bip01_R_UpperArm 3 0 1 83) (Bip01_L_Forearm 3 0 -50 0) (Bip01_L_UpperArm 3 -40 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.8">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -130 0) (Bip01_R_UpperArm 3 -32 1 90) (Bip01_L_Forearm 3 0 -7 0) (Bip01_L_UpperArm 3 -80 3 -90) 
+		</posture> 
+	      </frame>
+	    </phase>
+	    <phase>
+	      <frame ftime="0.2">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -130 0) (Bip01_R_UpperArm 3 -32 1 90) (Bip01_L_Forearm 3 0 -7 0) (Bip01_L_UpperArm 3 -80 3 -90)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.4"> 
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -80 0) (Bip01_R_UpperArm 3 0 1 83) (Bip01_L_Forearm 3 0 -50 0) (Bip01_L_UpperArm 3 -40 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.6">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -40 0) (Bip01_R_UpperArm 3 45 1 74) (Bip01_L_Forearm 3 0 -85 0) (Bip01_L_UpperArm 3 0 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.8">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 0 0) (Bip01_R_UpperArm 3 90 1 65) (Bip01_L_Forearm 3 0 -130 0) (Bip01_L_UpperArm 3 40 9 -90) 
+		</posture> 
+	      </frame>
+	    </phase>
+	    <phase>
+	      <frame ftime="0.2">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 0 0) (Bip01_R_UpperArm 3 90 1 65) (Bip01_L_Forearm 3 0 -130 0) (Bip01_L_UpperArm 3 40 9 -90)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.4"> <affiliate onset="t1" end="t2"/>
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -40 0) (Bip01_R_UpperArm 3 45 1 74) (Bip01_L_Forearm 3 0 -85 0) (Bip01_L_UpperArm 3 0 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.6">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -80 0) (Bip01_R_UpperArm 3 0 1 83) (Bip01_L_Forearm 3 0 -50 0) (Bip01_L_UpperArm 3 -40 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.8">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -130 0) (Bip01_R_UpperArm 3 -32 1 90) (Bip01_L_Forearm 3 0 -7 0) (Bip01_L_UpperArm 3 -80 3 -90) 
+		</posture> 
+	      </frame>
+	    </phase>
+	    <phase>
+	      <frame ftime="0.2">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -130 0) (Bip01_R_UpperArm 3 -32 1 90) (Bip01_L_Forearm 3 0 -7 0) (Bip01_L_UpperArm 3 -80 3 -90)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.4"> 
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -80 0) (Bip01_R_UpperArm 3 0 1 83) (Bip01_L_Forearm 3 0 -50 0) (Bip01_L_UpperArm 3 -40 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.6">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -40 0) (Bip01_R_UpperArm 3 45 1 74) (Bip01_L_Forearm 3 0 -85 0) (Bip01_L_UpperArm 3 0 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.8">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 0 0) (Bip01_R_UpperArm 3 90 1 65) (Bip01_L_Forearm 3 0 -130 0) (Bip01_L_UpperArm 3 40 9 -90) 
+		</posture> 
+	      </frame>
+	    </phase>
+	    <phase>
+	      <frame ftime="0.2">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 0 0) (Bip01_R_UpperArm 3 90 1 65) (Bip01_L_Forearm 3 0 -130 0) (Bip01_L_UpperArm 3 40 9 -90)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.4">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -40 0) (Bip01_R_UpperArm 3 45 1 74) (Bip01_L_Forearm 3 0 -85 0) (Bip01_L_UpperArm 3 0 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.6">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -80 0) (Bip01_R_UpperArm 3 0 1 83) (Bip01_L_Forearm 3 0 -50 0) (Bip01_L_UpperArm 3 -40 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.8">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -130 0) (Bip01_R_UpperArm 3 -32 1 90) (Bip01_L_Forearm 3 0 -7 0) (Bip01_L_UpperArm 3 -80 3 -90) 
+		</posture> 
+	      </frame>
+	    </phase>
+	    <phase>
+	      <frame ftime="0.2">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -130 0) (Bip01_R_UpperArm 3 -32 1 90) (Bip01_L_Forearm 3 0 -7 0) (Bip01_L_UpperArm 3 -80 3 -90)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.4"> 
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -80 0) (Bip01_R_UpperArm 3 0 1 83) (Bip01_L_Forearm 3 0 -50 0) (Bip01_L_UpperArm 3 -40 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.6">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -40 0) (Bip01_R_UpperArm 3 45 1 74) (Bip01_L_Forearm 3 0 -85 0) (Bip01_L_UpperArm 3 0 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.8">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 0 0) (Bip01_R_UpperArm 3 90 1 65) (Bip01_L_Forearm 3 0 -130 0) (Bip01_L_UpperArm 3 40 9 -90) 
+		</posture> 
+	      </frame>
+	    </phase>
+	    <phase>
+	      <frame ftime="0.2">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 0 0) (Bip01_R_UpperArm 3 90 1 65) (Bip01_L_Forearm 3 0 -130 0) (Bip01_L_UpperArm 3 40 9 -90)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.4"> 
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -40 0) (Bip01_R_UpperArm 3 45 1 74) (Bip01_L_Forearm 3 0 -85 0) (Bip01_L_UpperArm 3 0 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.6">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -80 0) (Bip01_R_UpperArm 3 0 1 83) (Bip01_L_Forearm 3 0 -50 0) (Bip01_L_UpperArm 3 -40 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.8">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -130 0) (Bip01_R_UpperArm 3 -32 1 90) (Bip01_L_Forearm 3 0 -7 0) (Bip01_L_UpperArm 3 -80 3 -90) 
+		</posture> 
+	      </frame>
+	    </phase>
+	    <phase>
+	      <frame ftime="0.2">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -130 0) (Bip01_R_UpperArm 3 -32 1 90) (Bip01_L_Forearm 3 0 -7 0) (Bip01_L_UpperArm 3 -80 3 -90)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.4"> 
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -80 0) (Bip01_R_UpperArm 3 0 1 83) (Bip01_L_Forearm 3 0 -50 0) (Bip01_L_UpperArm 3 -40 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.6">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -40 0) (Bip01_R_UpperArm 3 45 1 74) (Bip01_L_Forearm 3 0 -85 0) (Bip01_L_UpperArm 3 0 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.8">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 0 0) (Bip01_R_UpperArm 3 90 1 65) (Bip01_L_Forearm 3 0 -130 0) (Bip01_L_UpperArm 3 40 9 -90) 
+		</posture> 
+	      </frame>
+	    </phase>
+	    <phase>
+	      <frame ftime="0.2">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 0 0) (Bip01_R_UpperArm 3 90 1 65) (Bip01_L_Forearm 3 0 -130 0) (Bip01_L_UpperArm 3 40 9 -90)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.4"> 
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -40 0) (Bip01_R_UpperArm 3 45 1 74) (Bip01_L_Forearm 3 0 -85 0) (Bip01_L_UpperArm 3 0 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.6">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -80 0) (Bip01_R_UpperArm 3 0 1 83) (Bip01_L_Forearm 3 0 -50 0) (Bip01_L_UpperArm 3 -40 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.8">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -130 0) (Bip01_R_UpperArm 3 -32 1 90) (Bip01_L_Forearm 3 0 -7 0) (Bip01_L_UpperArm 3 -80 3 -90) 
+		</posture> 
+	      </frame>
+	    </phase>
+	    <phase>
+	      <frame ftime="0.2">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -130 0) (Bip01_R_UpperArm 3 -32 1 90) (Bip01_L_Forearm 3 0 -7 0) (Bip01_L_UpperArm 3 -80 3 -90)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.4"> 
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -80 0) (Bip01_R_UpperArm 3 0 1 83) (Bip01_L_Forearm 3 0 -50 0) (Bip01_L_UpperArm 3 -40 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.6">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -40 0) (Bip01_R_UpperArm 3 45 1 74) (Bip01_L_Forearm 3 0 -85 0) (Bip01_L_UpperArm 3 0 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.8">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 0 0) (Bip01_R_UpperArm 3 90 1 65) (Bip01_L_Forearm 3 0 -130 0) (Bip01_L_UpperArm 3 40 9 -90) 
+		</posture> 
+	      </frame>
+	    </phase>
+	    <phase>
+	      <frame ftime="0.2">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 0 0) (Bip01_R_UpperArm 3 90 1 65) (Bip01_L_Forearm 3 0 -130 0) (Bip01_L_UpperArm 3 40 9 -90)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.4"> 
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -40 0) (Bip01_R_UpperArm 3 45 1 74) (Bip01_L_Forearm 3 0 -85 0) (Bip01_L_UpperArm 3 0 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.6">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -80 0) (Bip01_R_UpperArm 3 0 1 83) (Bip01_L_Forearm 3 0 -50 0) (Bip01_L_UpperArm 3 -40 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.8">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -130 0) (Bip01_R_UpperArm 3 -32 1 90) (Bip01_L_Forearm 3 0 -7 0) (Bip01_L_UpperArm 3 -80 3 -90) 
+		</posture> 
+	      </frame>
+	    </phase>
+	    <phase>
+	      <frame ftime="0.2">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -130 0) (Bip01_R_UpperArm 3 -32 1 90) (Bip01_L_Forearm 3 0 -7 0) (Bip01_L_UpperArm 3 -80 3 -90)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.4"> 
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -80 0) (Bip01_R_UpperArm 3 0 1 83) (Bip01_L_Forearm 3 0 -50 0) (Bip01_L_UpperArm 3 -40 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.6">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -40 0) (Bip01_R_UpperArm 3 45 1 74) (Bip01_L_Forearm 3 0 -85 0) (Bip01_L_UpperArm 3 0 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.8">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 0 0) (Bip01_R_UpperArm 3 90 1 65) (Bip01_L_Forearm 3 0 -130 0) (Bip01_L_UpperArm 3 40 9 -90) 
+		</posture> 
+	      </frame>
+	    </phase>
+	    <phase>
+	      <frame ftime="0.2">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 0 0) (Bip01_R_UpperArm 3 90 1 65) (Bip01_L_Forearm 3 0 -130 0) (Bip01_L_UpperArm 3 40 9 -90)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.4"> 
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -40 0) (Bip01_R_UpperArm 3 45 1 74) (Bip01_L_Forearm 3 0 -85 0) (Bip01_L_UpperArm 3 0 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.6">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -80 0) (Bip01_R_UpperArm 3 0 1 83) (Bip01_L_Forearm 3 0 -50 0) (Bip01_L_UpperArm 3 -40 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.8">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -130 0) (Bip01_R_UpperArm 3 -32 1 90) (Bip01_L_Forearm 3 0 -7 0) (Bip01_L_UpperArm 3 -80 3 -90) 
+		</posture> 
+	      </frame>
+	    </phase>
+	    <phase>
+	      <frame ftime="0.2">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -130 0) (Bip01_R_UpperArm 3 -32 1 90) (Bip01_L_Forearm 3 0 -7 0) (Bip01_L_UpperArm 3 -80 3 -90)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.4"> 
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -80 0) (Bip01_R_UpperArm 3 0 1 83) (Bip01_L_Forearm 3 0 -50 0) (Bip01_L_UpperArm 3 -40 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.6">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -40 0) (Bip01_R_UpperArm 3 45 1 74) (Bip01_L_Forearm 3 0 -85 0) (Bip01_L_UpperArm 3 0 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.8">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 0 0) (Bip01_R_UpperArm 3 90 1 65) (Bip01_L_Forearm 3 0 -130 0) (Bip01_L_UpperArm 3 40 9 -90) 
+		</posture> 
+	      </frame>
+	    </phase>
+	    <phase>
+	      <frame ftime="0.2">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 0 0) (Bip01_R_UpperArm 3 90 1 65) (Bip01_L_Forearm 3 0 -130 0) (Bip01_L_UpperArm 3 40 9 -90)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.4"> 
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -40 0) (Bip01_R_UpperArm 3 45 1 74) (Bip01_L_Forearm 3 0 -85 0) (Bip01_L_UpperArm 3 0 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.6">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -80 0) (Bip01_R_UpperArm 3 0 1 83) (Bip01_L_Forearm 3 0 -50 0) (Bip01_L_UpperArm 3 -40 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.8">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -130 0) (Bip01_R_UpperArm 3 -32 1 90) (Bip01_L_Forearm 3 0 -7 0) (Bip01_L_UpperArm 3 -80 3 -90) 
+		</posture> 
+	      </frame>
+	    </phase>
+	    <phase>
+	      <frame ftime="0.2">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -130 0) (Bip01_R_UpperArm 3 -32 1 90) (Bip01_L_Forearm 3 0 -7 0) (Bip01_L_UpperArm 3 -80 3 -90)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.4"> 
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -80 0) (Bip01_R_UpperArm 3 0 1 83) (Bip01_L_Forearm 3 0 -50 0) (Bip01_L_UpperArm 3 -40 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.6">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 -40 0) (Bip01_R_UpperArm 3 45 1 74) (Bip01_L_Forearm 3 0 -85 0) (Bip01_L_UpperArm 3 0 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.8">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 0 0 0) (Bip01_R_UpperArm 3 90 1 65) (Bip01_L_Forearm 3 0 -130 0) (Bip01_L_UpperArm 3 40 9 -90) 
+		</posture> 
+	      </frame>
+	    </phase>
+	    <phase>
+	      <frame ftime="0.2">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 0 0) (Bip01_R_UpperArm 3 90 1 65) (Bip01_L_Forearm 3 0 -130 0) (Bip01_L_UpperArm 3 40 9 -90) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.4">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -5 0) (Bip01_R_UpperArm 3 45 -1 50) (Bip01_L_Forearm 3 0 -88 0) (Bip01_L_UpperArm 3 44 6 -53) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.6">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 0 -10 0) (Bip01_R_UpperArm 3 0 -4 40) (Bip01_L_Forearm 3 0 -48 0) (Bip01_L_UpperArm 3 47 3 -16) 
+		</posture> 
+	      </frame>
+	      <frame ftime="0.8">
+		<posture>
+		   Humanoid (Bip01_R_Forearm 3 -22 -15 0) (Bip01_R_UpperArm 3 -40 16 -1)(Bip01_L_Forearm 3 13 -8 0) (Bip01_L_UpperArm 3 48 2 21)
+		</posture> 
+	      </frame>
+	    </phase> 
+          </keyframing>
+        </constraints>
+      </gesture>
+    </behaviorspec>
+  </utterance>
+
+</definition>

@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE definition SYSTEM "./utterances.dtd">
+<definition>
+
+  <utterance>
+    <specification>
+     Gut, dann warten wir noch eine Weile. Sagen Sie mir doch bitte, wie lange wir noch warten sollen.
+    </specification>
+  </utterance>
+
+</definition>

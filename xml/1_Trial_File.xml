@@ -1,0 +1,513 @@
+<scxml xmlns="http://www.w3.org/2005/07/scxml" initial="firstUse">
+  
+	<state id="firstUse">
+		<transition event="q-signal:smEngine.yesSignal()" target="dataWidget">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="checkDay">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout();smEngine.showInfoWidget("yesno", "startup"); smEngine.setDate(); smEngine.logStateMachine("firstUse")</script>
+		</onentry>
+	</state>
+
+	<state id="checkDay">
+		<transition event="q-signal:smEngine.yesSignal()" target="entrydialog_1_1_1">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="checkForLastDayOfWeek">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.checkCurrentDay("firstday");smEngine.logStateMachine("checkday") </script>
+		</onentry>
+	</state>
+
+	<state id="checkForLastDayOfWeek">
+		<transition event="q-signal:smEngine.yesSignal()" target="entrydialog_1_1_3">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="entrydialog_1_1_2">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.checkCurrentDay("standard");smEngine.logStateMachine("checkForLastDayofWeek") </script>
+		</onentry>
+	</state>
+
+	<state id="entrydialog_1_1_1">
+		<transition event="q-signal:smEngine.yesSignal()" target="entrydialog_1_4_2">
+		</transition>
+		<onentry>
+			<script>smEngine.executeMurmlSpec("1.1.1.a.us");smEngine.removeLayout();smEngine.showControlWidget("continue");smEngine.logStateMachine("entrydialog_1_1_1") </script>
+		</onentry>
+	</state>
+
+	<state id="entrydialog_1_1_2">
+		<transition event="q-signal:smEngine.yesSignal()" target="entrydialog_1_4_2">
+		</transition>
+		<onentry>
+			<script>smEngine.executeMurmlSpec("1.1.2.a.us");smEngine.removeLayout();smEngine.showControlWidget("continue");smEngine.logStateMachine("entrydialog_1_1_2") </script>
+		</onentry>
+	</state>
+
+	<state id="entrydialog_1_1_3">
+		<transition event="q-signal:smEngine.yesSignal()" target="entrydialog_1_4_2">
+		</transition>
+		<onentry>
+			<script>smEngine.executeMurmlSpec("1.1.3.a.us");smEngine.removeLayout();smEngine.showControlWidget("continue");smEngine.logStateMachine("entrydialog_1_1_3") </script>
+		</onentry>
+	</state>
+
+	<state id="dataWidget">
+		<transition event="q-signal:smEngine.yesSignal()" target="entrydialog_1_4_2">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout();smEngine.showDialogWidget() ;smEngine.logStateMachine("datawidget")</script>
+		</onentry>
+	</state>
+
+	<state id="entrydialog_1_4_2">
+		<transition event="q-signal:smEngine.yesSignal()" target="doRandom">
+		</transition>
+		<onentry>
+			<script>smEngine.executeMurmlSpec("1.1.4.2.a.us");smEngine.removeLayout();smEngine.showControlWidget("continue");smEngine.logStateMachine("entrydialog_1_4_2") </script>
+		</onentry>
+	</state>
+
+	<state id="doRandom">
+		<transition event="q-signal:smEngine.yesSignal()" target="healthTipp">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="morning_tooglePause_t2">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.getRandom();smEngine.logStateMachine("doRandom") </script>
+		</onentry>
+	</state>
+
+	<state id="healthTipp">
+		<transition event="q-signal:smEngine.yesSignal()" target="morning_tooglePause_t2">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.showInfoWidget("continue","fitness_tipp1");smEngine.logStateMachine("healthtip") </script>
+		</onentry>
+	</state>
+	
+<!-- DIAGRAMM 2.1 - Vormittagsprogramm -->
+
+	<state id="morning_tooglePause_t2">
+		<transition event="q-signal:smEngine.noSignal()" target="morning_dialog_2_1_1">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.addPause(4000);smEngine.logStateMachine("morning_tooglepause_t2") </script>
+		</onentry>
+	</state>
+
+	<state id="morning_dialog_2_1_1">
+<!--		<transition event="q-signal:smEngine.yesSignal()" target="morning_exercise_checkVariableM">-->
+		<transition event="q-signal:smEngine.yesSignal()" target="morning_exercise_prog">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="morning_dialog_2_1_2">
+		</transition>
+		
+		<onentry>
+			<script>smEngine.executeMurmlSpec("2.1.1.a.us");smEngine.removeLayout(); smEngine.showControlWidget("murml"); smEngine.logStateMachine("morning_dialog_2_1_1") </script>
+		</onentry>
+	</state>
+<!-- TODO: change button to "weiter"	-->
+
+	<state id="morning_dialog_2_1_2">
+		<transition event="q-signal:smEngine.yesSignal()" target="morning_confirmdialog_2_1_2">
+		</transition>
+		<onentry>
+			<script>smEngine.executeMurmlSpec("2.1.2.a.us");smEngine.removeLayout(); smEngine.showInfoWidget("yesno", "dialog_2_1_2"); smEngine.logStateMachine("morning_dialog_2_1_2")  </script>
+		</onentry>
+	</state>
+<!-- M == VAR1 -->
+	<state id="morning_confirmdialog_2_1_2">
+		<transition event="q-signal:smEngine.yesSignal()" target="morning_tooglePause_t3">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="morning_dialog_triple">
+		<!-- CHECK SIGNAL HERE-->
+		</transition>
+		<onentry>
+			<script>smEngine.executeMurmlSpec("2.1.2.a.us");smEngine.removeLayout(); smEngine.incVar("var1"); smEngine.showInfoWidget("yesno", "dialog_2_1_2"); smEngine.logStateMachine("morning_confirmdialog_2_1_2")  </script>
+		</onentry>
+	</state>
+
+	<state id="morning_tooglePause_t3">
+		<transition event="q-signal:smEngine.noSignal()" target="morning_dialog_2_1_3">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.addPause(4000);smEngine.logStateMachine("morning_togglepause_t3")  </script>
+		</onentry>
+	</state>
+
+	<state id="morning_dialog_2_1_3">
+		<transition event="q-signal:smEngine.yesSignal()" target="morning_exercise_prog">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="morning_checkVariableM">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.showInfoWidget("yesno", "dialog_2_1_3") ;smEngine.logStateMachine("morning_dialog_2_1_3") </script>
+		</onentry>
+	</state>
+
+	<state id="morning_checkVariableM">
+		<transition event="q-signal:smEngine.yesSignal()" target="morning_confirmdialog_2_1_2">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="morning_dialog_2_1_4">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.compVar("var1", 2);smEngine.logStateMachine("morning_checkVariableM")  </script>
+		</onentry>
+	</state>
+
+	<state id="morning_dialog_2_1_4">
+		<transition event="q-signal:smEngine.yesSignal()" target="morning_exercise_prog">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="checkForShortDay">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.showInfoWidget("yesno", "dialog_2_1_4");smEngine.logStateMachine("morning_dialog_2_1_4") </script>
+		</onentry>
+	</state>
+
+
+<!-- DIAGRAMM 2.1 - EXERCISE ANFANG -->
+
+
+
+	<!-- TODO: CHECK FOR SHORT DAY HERE -->
+	
+	<state id="morning_exercise_prog">
+		<transition event="q-signal:smEngine.yesSignal()" target="morning_checkForExercise">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.incVar("var3"); smEngine.executeExercise();smEngine.showControlWidget("continue");smEngine.logStateMachine("morning_exercise_prog")  </script>
+		</onentry>
+	</state>
+	
+	<state id="morning_checkForExercise">
+		<transition event="q-signal:smEngine.yesSignal()" target="morning_exercise_dialog_3_1_2_1">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="morning_exercise_dialog_3_1_3">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.checkForFirstExercise();smEngine.logStateMachine("morning_checkForExercise") </script>
+		</onentry>
+	</state>
+	
+	<state id="morning_exercise_dialog_3_1_2_1">
+		<transition event="q-signal:smEngine.yesSignal()" target="morning_exercise_dialog_3_1_2_2">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="morning_exercise_dialog_3_1_3">
+		</transition>
+		<onentry>
+			<script>smEngine.executeMurmlSpec("3.1.2.1.a.us");smEngine.removeLayout(); smEngine.showControlWidget("yesno"); smEngine.logStateMachine("morning_exercise_dialog_3_1_2_1")  </script>
+		</onentry>
+	</state>
+
+	
+	<state id="morning_exercise_dialog_3_1_2_2">
+		<transition event="q-signal:smEngine.yesSignal()" target="morning_repeat_exercise">
+		</transition>
+		<onentry>
+			<script>smEngine.executeMurmlSpec("3.1.2.2.a.us");smEngine.removeLayout(); smEngine.showControlWidget("yesno"); smEngine.logStateMachine("morning_exercise_dialog_3_1_2_2") </script>
+		</onentry>
+	</state>
+
+
+
+	<state id="morning_repeat_exercise">
+		<transition event="q-signal:smEngine.yesSignal()" target="morning_checkForExercise">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.showControlWidget("yesno"); smEngine.repeatExercise() ;smEngine.logStateMachine("repeatExercise") </script>
+		</onentry>
+	</state>
+
+
+	<state id="morning_exercise_dialog_3_1_3">
+		<transition event="q-signal:smEngine.yesSignal()" target="morning_tooglePause_t4">
+		</transition>
+		<onentry>
+			<script>smEngine.executeMurmlSpec("3.1.3.a.us");smEngine.removeLayout(); smEngine.showControlWidget("continue"); smEngine.logStateMachine("morning_exercise_dialog_3_1_3")</script>
+		</onentry>
+	</state>
+
+	<!-- DIAGRAMM 2.1 - EXERCISE ENDE -->
+
+
+	<state id="morning_tooglePause_t4">
+		<transition event="q-signal:smEngine.noSignal()" target="morning_dialog_2_1_5">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.addPause(4000);smEngine.logStateMachine("morning_tooglepause_t4")</script>
+		</onentry>
+	</state>
+
+	<state id="morning_dialog_2_1_5">
+		<transition event="q-signal:smEngine.yesSignal()" target="morning_exercise_prog">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="checkForShortDay">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.incVar("var2"); smEngine.showInfoWidget("yesno", "dialog_2_1_5");smEngine.logStateMachine("morning_dialog_2_1_5")</script>
+		</onentry>
+	</state>
+	
+	<state id="checkForShortDay">
+		<transition event="q-signal:smEngine.yesSignal()" target="checkForLastDay">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="finalizeMorning">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.checkForShortDay();smEngine.logStateMachine("checkForShortDay")</script>
+		</onentry>
+	</state>
+
+	<state id="finalizeMorning">
+		<transition event="q-signal:smEngine.yesSignal()" target="afternoon_tooglePause_t2">
+		</transition>
+		<onentry>
+			<script>smEngine.executeMurmlSpec("1.2.1.a.us");smEngine.removeLayout(); smEngine.showControlWidget("continue"); smEngine.logStateMachine("finalizeMorning")</script>
+		</onentry>
+	</state>
+	
+		
+
+
+
+	
+<!-- DIAGRAMM 2.1 - Vormittagsprogramm ENDE -->
+
+
+
+<!-- DIAGRAMM 2.2 - Nachmittagsprogramm ANFANG -->
+
+<!-- DIAGRAMM 2.2 - NACHMITTAGSPROGRAMM -->
+
+	<state id="afternoon_tooglePause_t2">
+		<transition event="q-signal:smEngine.noSignal()" target="afternoon_dialog_2_1_1">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.addPause(4000);smEngine.logStateMachine("afternoon_tooglepause_t2") </script>
+		</onentry>
+	</state>
+
+	<state id="afternoon_dialog_2_1_1">
+		<transition event="q-signal:smEngine.yesSignal()" target="afternoon_exercise_prog">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="afternoon_dialog_2_1_2">
+		</transition>
+		
+		<onentry>
+			<script>smEngine.executeMurmlSpec("2.1.1.a.us");smEngine.removeLayout(); smEngine.showControlWidget("yesno"); smEngine.logStateMachine("afternoon_dialog_2_1_1") </script>
+		</onentry>
+	</state>
+<!-- TODO: change button to "weiter"	-->
+
+	<state id="afternoon_dialog_2_1_2">
+		<transition event="q-signal:smEngine.yesSignal()" target="afternoon_confirmdialog_2_1_2">
+		</transition>
+		<onentry>
+			<script>smEngine.executeMurmlSpec("2.1.2.a.us");smEngine.removeLayout(); smEngine.showInfoWidget("continue", "dialog_2_1_2"); smEngine.logStateMachine("afternoon_dialog_2_1_2")  </script>
+		</onentry>
+	</state>
+<!-- M == VAR1 -->
+	<state id="afternoon_confirmdialog_2_1_2">
+		<transition event="q-signal:smEngine.yesSignal()" target="afternoon_tooglePause_t3">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="afternoon_dialog_triple">
+		<!-- CHECK SIGNAL HERE-->
+		</transition>
+		<onentry>
+			<script>smEngine.executeMurmlSpec("2.1.2.a.us"); smEngine.removeLayout(); smEngine.incVar("var1"); smEngine.showInfoWidget("yesno", "dialog_2_1_2"); smEngine.logStateMachine("afternoon_confirmdialog_2_1_2")  </script>
+		</onentry>
+	</state>
+
+	<state id="afternoon_tooglePause_t3">
+		<transition event="q-signal:smEngine.noSignal()" target="morning_dialog_2_1_3">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.addPause(4000);smEngine.logStateMachine("afternoon_togglepause_t3")  </script>
+		</onentry>
+	</state>
+
+	<state id="afternoon_dialog_2_1_3">
+		<transition event="q-signal:smEngine.yesSignal()" target="afternoon_exercise_prog">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="afternoon_checkVariableM">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.showInfoWidget("yesno", "dialog_2_1_3") ;smEngine.logStateMachine("afternoon_dialog_2_1_3") </script>
+		</onentry>
+	</state>
+
+	<state id="afternoon_checkVariableM">
+		<transition event="q-signal:smEngine.yesSignal()" target="afternoon_confirmdialog_2_1_2">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="afternoon_dialog_2_2_4">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.compVar("var1", 2);smEngine.logStateMachine("afternoon_checkVariableM")  </script>
+		</onentry>
+	</state>
+
+	<state id="afternoon_dialog_2_2_4">
+		<transition event="q-signal:smEngine.yesSignal()" target="afternoon_exercise_prog">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="checkForLastDay">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.showInfoWidget("yesno", "dialog_2_1_4");smEngine.logStateMachine("afternoon_dialog_2_1_4") </script>
+		</onentry>
+	</state>
+
+
+<!-- DIAGRAMM 2.1 - EXERCISE ANFANG -->
+
+
+
+	<!-- TODO: CHECK FOR SHORT DAY HERE -->
+	
+	<state id="afternoon_exercise_prog">
+		<transition event="q-signal:smEngine.yesSignal()" target="afternoon_checkForExercise">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.incVar("var3"); smEngine.executeExercise();smEngine.showControlWidget("standard");smEngine.logStateMachine("afternoon_exercise_prog")  </script>
+		</onentry>
+	</state>
+	
+	<state id="afternoon_checkForExercise">
+		<transition event="q-signal:smEngine.yesSignal()" target="afternoon_exercise_dialog_3_1_2_1">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="afternoon_exercise_dialog_3_1_3">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.checkForFirstExercise();smEngine.logStateMachine("afternoon_checkForExercise") </script>
+		</onentry>
+	</state>
+	
+	<state id="afternoon_exercise_dialog_3_1_2_1">
+		<transition event="q-signal:smEngine.yesSignal()" target="afternoon_exercise_dialog_3_1_2_2">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="afternoon_exercise_dialog_3_1_3">
+		</transition>
+		<onentry>
+			<script>smEngine.executeMurmlSpec("3.1.2.1.a.us");smEngine.removeLayout(); smEngine.showControlWidget("yesno"); smEngine.logStateMachine("afternoon_exercise_dialog_3_1_2_1")  </script>
+		</onentry>
+	</state>
+
+	
+	<state id="afternoon_exercise_dialog_3_1_2_2">
+		<transition event="q-signal:smEngine.yesSignal()" target="afternoon_repeat_exercise">
+		</transition>
+		<onentry>
+			<script>smEngine.executeMurmlSpec("3.1.2.2.a.us");smEngine.removeLayout(); smEngine.showControlWidget("yesno"); smEngine.logStateMachine("afternoon_exercise_dialog_3_1_2_2") </script>
+		</onentry>
+	</state>
+
+
+
+	<state id="afternoon_repeat_exercise">
+		<transition event="q-signal:smEngine.yesSignal()" target="afternoon_checkForExercise">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.showControlWidget("yesno"); smEngine.repeatExercise() ;smEngine.logStateMachine("repeatExercise") </script>
+		</onentry>
+	</state>
+
+
+	<state id="afternoon_exercise_dialog_3_1_3">
+		<transition event="q-signal:smEngine.yesSignal()" target="afternoon_tooglePause_t4">
+		</transition>
+		<onentry>
+			<script>smEngine.executeMurmlSpec("3.1.3.a.us");smEngine.removeLayout(); smEngine.showControlWidget("standard"); smEngine.logStateMachine("afternoon_exercise_dialog_3_1_3")</script>
+		</onentry>
+	</state>
+
+	<!-- DIAGRAMM 2.1 - EXERCISE ENDE -->
+
+
+	<state id="afternoon_tooglePause_t4">
+		<transition event="q-signal:smEngine.noSignal()" target="afternoon_dialog_2_2_5">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.addPause(4000);smEngine.logStateMachine("afternoon_tooglepause_t4")</script>
+		</onentry>
+	</state>
+
+	<state id="afternoon_dialog_2_2_5">
+		<transition event="q-signal:smEngine.yesSignal()" target="afternoon_exercise_prog">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="checkForLastDay">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout(); smEngine.incVar("var2"); smEngine.showInfoWidget("yesno", "dialog_2_1_5");smEngine.logStateMachine("afternoon_dialog_2_1_5")</script>
+		</onentry>
+	</state>
+	
+
+
+<!-- DIAGRAMM 2.2 - Nachmittagsprogramm ENDE -->
+
+
+<!-- Diagramm 1.1 - Basis - Ende -->
+
+
+	<state id="checkForLastDay">
+		<transition event="q-signal:smEngine.yesSignal()" target="goodbye_dialog_1_3_3_1">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="checkForFirstUse">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout();smEngine.checkForLastDay(); smEngine.logStateMachine("checkForLastDay")</script>
+		</onentry>
+	</state>
+
+	<state id="checkForFirstUse">
+		<transition event="q-signal:smEngine.yesSignal()" target="goodbye_dialog_1_3_1">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="goodbye_dialog_1_3_2">
+		</transition>
+		<onentry>
+			<script>smEngine.removeLayout();smEngine.logStateMachine("CheckForFirstUse")</script>
+		</onentry>
+	</state>
+
+	<state id="goodbye_dialog_1_3_2">
+		<transition event="q-signal:smEngine.yesSignal()" target="finished">
+		</transition>
+		<onentry>
+			<script>smEngine.executeMurmlSpec("1.3.2.a.us");smEngine.removeLayout(); smEngine.showControlWidget(); smEngine.logStateMachine("goodbye_dialog_1_3_2")</script>
+		</onentry>
+	</state>
+
+	<state id="goodbye_dialog_1_3_1">
+		<transition event="q-signal:smEngine.yesSignal()" target="finished">
+		</transition>
+		<onentry>
+			<script>smEngine.executeMurmlSpec("1.3.1.a.us");smEngine.removeLayout(); smEngine.showControlWidget; smEngine.logStateMachine("goodbye_dialog_1_3_1")</script>
+		</onentry>
+	</state>
+
+	<state id="goodbye_dialog_1_3_3_1">
+		<transition event="q-signal:smEngine.yesSignal()" target="finished">
+		</transition>
+		<onentry>
+			<script>smEngine.executeMurmlSpec("1.3.3.1.a.us");smEngine.removeLayout(); smEngine.showWeekendWidget(); smEngine.logStateMachine("goodbye_dialog_1_3_3_1")</script>
+		</onentry>
+	</state>
+	
+	<state id="goodbye_dialog_1_3_3_2">
+		<transition event="q-signal:smEngine.yesSignal()" target="finished">
+		</transition>
+		<onentry>
+			<script>smEngine.executeMurmlSpec("1.3.3.2.a.us");smEngine.removeLayout(); smEngine.showControlWidget(); smEngine.logStateMachine("goodbye_dialog_1_3_3_2")</script>
+		</onentry>
+	</state>
+	
+	<state id="finished">
+		<onentry>
+			<script>smEngine.removeLayout();smEngine.stop() </script>
+		</onentry>
+	</state>
+	
+</scxml>

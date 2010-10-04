@@ -1,0 +1,49 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE definition SYSTEM "./utterances.dtd">
+<definition>
+
+  <utterance>
+    <specification>
+       <time id="t1"/>Hallo. Mein Name ist Vince und <time id="t2"/> ich möchte Ihnen dabei helfen, Ihren Arbeitsalltag etwas sportlicher zu gestalten. Ich 	   werde Ihnen im Folgenden erklären, was wir gemeinsam vorhaben, doch bevor wir anfangen möchte ich Sie bitten, mir einiges über Sie zu erzählen. 	    	   Bitte füllen Sie die folgenden Felder aus. Geben Sie zunächst Ihren vollständigen Namen und Ihr Geschlecht an. Anschließend folgen Angaben zu Ihren 	  Arbeitszeiten, Ihren sportlichen Tätigkeiten sowie einige Angaben zu Ihrer Gesundheit. Sollte etwas unklar sein klicken Sie einfach auf das kleine 	 Fragezeichen neben den Feldbezeichnungen. Wenn Sie alle Felder ausgefüllt haben klicken Sie auf den Speicherbutton. Dann können wir loslegen.
+    </specification>
+
+    <behaviorspec>
+      <gesture scope="body">
+        <constraints>
+          <keyframing scope="body" mode="spline" easescale="8.0" easeturningpoint="0.5">
+	    <phase>
+	     <affiliate onset="t1" end="t2"/>
+	      <frame ftime="0.1">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 -22 -15 0) (Bip01_R_UpperArm 3 -40 15 -1)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.3">
+		<posture>
+		  Humanoid  (Bip01_R_Forearm 3 -11 -120 0) (Bip01_R_UpperArm 3 3 15 90)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.5">
+		<posture>
+		  Humanoid (Bip01_R_Forearm 3 -18 -50 0) (Bip01_R_UpperArm 3 -25 15 80)
+		</posture> 
+	      </frame>
+	      <frame ftime="0.7">
+		<posture>
+		  Humanoid  (Bip01_R_Forearm 3 -11 -100 0) (Bip01_R_UpperArm 3 3 15 90)
+		</posture> 
+	      </frame>
+ 	      <frame ftime="0.9">
+		<posture>
+		  Humanoid  (Bip01_R_Forearm 3 -22 -15 0) (Bip01_R_UpperArm 3 -40 15 -1)
+		</posture> 
+	      </frame>
+	    </phase>
+          </keyframing>
+        </constraints>
+      </gesture>
+    </behaviorspec>
+
+  </utterance>
+
+</definition>

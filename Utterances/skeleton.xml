@@ -1,0 +1,465 @@
+<?xml version="1.0"?>
+<!DOCTYPE Humanoid SYSTEM "Humanoid.dtd">
+
+<Humanoid name="Vince" version="1.0">
+  <Limbs>
+    <Limb name="Torso"      type="Torso_Limb"  start_joint="Bip01_Pelvis" 				 end_joint="Bip01_Neck"   prefix="t_"    is_start_limb="1"/>
+    <Limb name="LLeg"       type="Leg_Limb"    start_joint="Bip01_L_Thigh" 				 end_joint="Bip01_L_Foot" prefix="ll_"   is_start_limb="0"/>
+    <Limb name="RLeg"       type="Leg_Limb"    start_joint="Bip01_R_Thigh" 				 end_joint="Bip01_R_Foot" prefix="rl_"   is_start_limb="0"/>
+    <Limb name="LArm"       type="Arm_Limb"    start_joint="Bip01_L_Clavicle" 			 end_joint="Bip01_L_Hand" prefix="l_"   is_start_limb="0"/>
+    <Limb name="RArm"       type="Arm_Limb"    start_joint="Bip01_R_Clavicle" 			 end_joint="Bip01_R_Hand" prefix="r_"   is_start_limb="0"/>
+    <Limb name="Head"       type="StdLimb"     start_joint="Bip01_Head"          		 end_joint="Bip01_Head" prefix="h_"    is_start_limb="0"/>
+    <Limb name="REye"       type="StdLimb"     start_joint="Bip01H_R_Eye" end_joint="Bip01H_R_Eye" prefix="re_"    is_start_limb="0"/>
+    <Limb name="LEye"       type="StdLimb"     start_joint="Bip01H_L_Eye" end_joint="Bip01H_L_Eye" prefix="le_"    is_start_limb="0"/>
+    <Limb name="Mouth"      type="StdLimb"     start_joint="Bip01H_Mouth" end_joint="Bip01H_Mouth" prefix="mo_"    is_start_limb="0"/>
+    <Limb name="EyePiece"   type="StdLimb"     start_joint="Bip01H_Eyepiece" 			end_joint="Bip01H_Eyepiece" prefix="ep_"    is_start_limb="0"/>
+    <Limb name="LThumb"     type="StdLimb"     start_joint="Bip01_L_Finger0"          end_joint="Bip01_L_Finger01" prefix="h_"    is_start_limb="0"/>
+    <Limb name="LPointing"  type="StdLimb"     start_joint="Bip01_L_Finger1"          end_joint="Bip01_L_Finger11" prefix="h_"    is_start_limb="0"/>
+    <Limb name="LMiddle"    type="StdLimb"     start_joint="Bip01_L_Finger2"          end_joint="Bip01_L_Finger21" prefix="h_"    is_start_limb="0"/>
+    <Limb name="LRing"     	type="StdLimb"     start_joint="Bip01_L_Finger3"          end_joint="Bip01_L_Finger31" prefix="h_"    is_start_limb="0"/>
+    <Limb name="RThumb"     type="StdLimb"     start_joint="Bip01_R_Finger0"          end_joint="Bip01_R_Finger01" prefix="h_"    is_start_limb="0"/>
+    <Limb name="RPointing"  type="StdLimb"     start_joint="Bip01_R_Finger1"          end_joint="Bip01_R_Finger11" prefix="h_"    is_start_limb="0"/>
+    <Limb name="RMiddle"    type="StdLimb"     start_joint="Bip01_R_Finger2"          end_joint="Bip01_R_Finger21" prefix="h_"    is_start_limb="0"/>
+    <Limb name="RRing"     	type="StdLimb"     start_joint="Bip01_R_Finger3"          end_joint="Bip01_R_Finger31" prefix="h_"    is_start_limb="0"/>
+
+  </Limbs>
+
+  <Joint name="Bip01_Pelvis" type="Euler_JointXYZ" num_childs="1">
+	<Axis1 angle="0" llimit="-180"   ulimit="180"/>
+	<Axis2 angle="0" llimit="-180"   ulimit="180"/>
+	<Axis3 angle="0" llimit="-180"   ulimit="180"/>
+
+    <Segment name="pelvis_spine" type="Euler_Link" index="0" translation="0 0 48" rotation="0 0 0">  
+      <Joint name="Bip01_Spine" type="Euler_JointXYZ" num_childs="3">
+	<Axis1 angle="0" llimit="-180"   ulimit="180"/>
+	<Axis2 angle="0.0395641" llimit="-180"   ulimit="180"/>
+	<Axis3 angle="-0.000206708" llimit="-180"   ulimit="180"/>
+
+	
+	<Segment name="spine_spine1" type="Euler_Link" index="0" translation="0 0 33">
+
+	  <Joint name="Bip01_Spine1" type="Euler_JointXYZ" num_childs="1">
+
+	    <Axis1 angle="0" llimit="-180"   ulimit="180"/>
+	    <Axis2 angle="-2.99997" llimit="-180"   ulimit="180"/>
+	    <Axis3 angle="0" llimit="-180"   ulimit="180"/>
+
+
+	    <Segment name="spine1_spine2" type="Euler_Link" index="0"  translation="0 0 42">
+
+	      <Joint name="Bip01_Spine2" type="Euler_JointXYZ" num_childs="1">
+
+		<Axis1 angle="0" llimit="-180"   ulimit="180"/>
+		<Axis2 angle="-1.9999" llimit="-180"   ulimit="180"/>
+		<Axis3 angle="0" llimit="-180"   ulimit="180"/>
+
+
+
+		<Segment name="spine2_spine3" type="Euler_Link" index="0" translation="0 0 47.9116">
+
+		  <Joint name="Bip01_Spine3" type="Euler_JointXYZ" num_childs="1">
+
+		    <Axis1 angle="0" llimit="-180"   ulimit="180"/>
+		    <Axis2 angle="-1.49982" llimit="-180"   ulimit="180"/>
+		    <Axis3 angle="0" llimit="-180"   ulimit="180"/>
+		    
+
+		    <Segment name="spine3_neck" type="Euler_Link" index="0"  translation="0 0 44.0486">
+		      <Joint name="Bip01_Neck" type="Euler_JointXYZ" num_childs="3">
+
+			<Axis1 angle="0" llimit="-180"   ulimit="180"/>
+			<Axis2 angle="0" llimit="-180"   ulimit="180"/>
+			<Axis3 angle="0" llimit="-180"   ulimit="180"/>
+
+			<!-- **************************  LEFT ARM ******************************** -->
+
+			<Segment name="neck_l_clavicle" type="Align_Link" index="0" rotation="0 0 0" translation="0 0 19.8335">  
+			  <Joint name="Bip01_L_Clavicle" type="Euler_JointXYZ" num_childs="1">
+			    <Axis1 angle="78.54" 		llimit="78.54"   		ulimit="78.54"/>													
+			    <Axis2 angle="180" 			llimit="180"   		ulimit="180"/>
+			    <Axis3 angle="0.0446727" 	llimit="0.0446727"   ulimit="0.0446727"/>
+			    
+
+
+
+			    <Segment name="l_clavicle_l_upperarm" type="Euler_Link" index="0" translation="0 0 54.6203"> 
+
+			      <Joint name="Bip01_L_UpperArm" type="Euler_JointXYZ" num_childs="1">
+				<Axis1 angle="-6.15483" llimit="-90"   ulimit="65"/>															
+				<Axis2 angle="-1.40037" llimit="-120"   ulimit="65"/>															
+				<Axis3 angle="6.4724" llimit="-90"   ulimit="90"/>
+				
+				
+				
+
+				<Segment name="l_upperarm_l_forearm" type="Euler_Link" index="0" translation="0 0 138.652">
+
+				  <Joint name="Bip01_L_Forearm" type="Euler_JointXYZ" num_childs="1">
+				    <Axis1 angle="6" llimit="0"   ulimit="130"/>
+				    <Axis2 angle="-8.95911" llimit="-130"   ulimit="0"/>
+				    <Axis3 angle="6" llimit="-130"   ulimit="90"/>
+				    
+
+				    
+
+				    <Segment name="l_forearm_l_hand" type="Euler_Link" index="0" translation="0 0 120.045">
+
+				      <Joint name="Bip01_L_Hand" type="Euler_JointXYZ" num_childs="4">
+					<Axis1 angle="20.9891" llimit="-70"   ulimit="70"/>																			
+					<Axis2 angle="0.0117744" llimit="-25"   ulimit="25"/>																			
+					<Axis3 angle="-89" llimit="-110"   ulimit="0"/>
+
+					<!-- **************************  LEFT THUMB ******************************** -->
+					<Segment name="l_hand_l_finger0" type="Euler_Link" index="0" translation="0 0 10">
+
+					  <Joint name="Bip01_L_Finger0" type="Euler_JointXYZ" num_childs="1">
+					    <Axis1 angle="42.5677" llimit="-180"   ulimit="180"/>
+					    <Axis2 angle="9.93893" llimit="-180"   ulimit="180"/>																			
+					    <Axis3 angle="0.747018" llimit="-180"   ulimit="180"/>																			
+
+					    <Segment name="l_finger0_l_finger01" type="Euler_Link" index="0" translation="0 0 10">
+
+					      <Joint name="Bip01_L_Finger01" type="Euler_JointXYZ" num_childs="">
+						<Axis1 angle="0" llimit="0"   ulimit="0"/>																			
+						<Axis2 angle="-4.99997" llimit="-180"   ulimit="180"/>
+						<Axis3 angle="0" llimit="0"   ulimit="0"/>																			
+					      </Joint> 
+					    </Segment>
+					  </Joint> 
+					</Segment>
+					<!-- **************************  END LEFT THUMB ******************************** -->
+					<!-- **************************  LEFT POINTING FINGER ******************************** -->
+					<Segment name="l_hand_l_finger1" type="Euler_Link" index="1" translation="0 0 10">
+
+					  <Joint name="Bip01_L_Finger1" type="Euler_JointXYZ" num_childs="1">
+					    <Axis1 angle="4.37622" llimit="-180"   ulimit="180"/>																					
+					    <Axis2 angle="13.4564" llimit="-180"   ulimit="180"/>
+					    <Axis3 angle="-1.09497 " llimit="-180"   ulimit="180"/>																			
+					    
+
+					    <Segment name="l_finger1_l_finger11" type="Euler_Link" index="0" translation="0 0 10">
+
+					      <Joint name="Bip01_L_Finger11" type="Euler_JointXYZ" num_childs="">
+						<Axis1 angle="0" llimit="0"   ulimit="0"/>																			
+						<Axis2 angle="15" llimit="-180"   ulimit="180"/>
+						<Axis3 angle="0" llimit="0"   ulimit="0"/>																			
+					      </Joint> 
+					    </Segment>
+					  </Joint> 
+					</Segment>
+					<!-- **************************  END LEFT POINTING FINGER ******************************** -->
+					<!-- **************************  LEFT MIDDLE FINGER ******************************** -->
+					<Segment name="l_hand_l_finger2" type="Euler_Link" index="2" translation="0 0 10">
+
+					  <Joint name="Bip01_L_Finger2" type="Euler_JointXYZ" num_childs="1">
+					    <Axis1 angle="0" llimit="-180"   ulimit="180"/>																					
+					    <Axis2 angle="10" llimit="-180"   ulimit="180"/>
+					    <Axis3 angle="-0.0456255" llimit="-180"   ulimit="180"/>																			
+					    
+
+					    <Segment name="l_finger2_l_finger21" type="Euler_Link" index="0" translation="0 0 10">
+
+					      <Joint name="Bip01_L_Finger21" type="Euler_JointXYZ" num_childs="">
+						<Axis1 angle="0" llimit="0"   ulimit="0"/>																			
+						<Axis2 angle="17" llimit="-180"   ulimit="180"/>
+						<Axis3 angle="0" llimit="0"   ulimit="0"/>																			
+					      </Joint> 
+					    </Segment>
+					  </Joint> 
+					</Segment>
+					<!-- **************************  END LEFT MIDDLE FINGER ******************************** -->
+					<!-- **************************  LEFT RING FINGER ******************************** -->
+					<Segment name="l_hand_l_finger3" type="Euler_Link" index="3" translation="0 0 10">
+
+					  <Joint name="Bip01_L_Finger3" type="Euler_JointXYZ" num_childs="1">
+					    <Axis1 angle="-4.81894" llimit="-180"   ulimit="180"/>																					
+					    <Axis2 angle="15.4477" llimit="-180"   ulimit="180"/>
+					    <Axis3 angle="1.28915" llimit="-180"   ulimit="180"/>																			
+					    
+
+					    <Segment name="l_finger3_l_finger31" type="Euler_Link" index="0" translation="0 0 10">
+
+					      <Joint name="Bip01_L_Finger31" type="Euler_JointXYZ" num_childs="">
+						<Axis1 angle="0" llimit="0"   ulimit="0"/>																			
+						<Axis2 angle="21.5" llimit="-180"   ulimit="180"/>
+						<Axis3 angle="0" llimit="0"   ulimit="0"/>																			
+					      </Joint> 
+					    </Segment>
+					  </Joint> 
+					</Segment>
+					<!-- **************************  END LEFT RING FINGER ******************************** -->
+
+				      </Joint> 
+				    </Segment>
+				  </Joint> 
+				</Segment>
+			      </Joint> 
+			    </Segment>	
+			  </Joint> 
+			</Segment>
+
+			<!-- **************************  END LEFT ARM ******************************** -->
+
+			<!-- **************************  RIGHT ARM ******************************** -->
+
+			<Segment name="neck_r_clavicle" type="Align_Link" index="1" rotation="0 0 0"  translation="0 0 19.8901">  
+			  <Joint name="Bip01_R_Clavicle" type="Euler_JointXYZ" num_childs="1">														
+			    <Axis1 angle="-78.54" llimit="-78.54"   ulimit="-78.54"/>													
+			    <Axis2 angle="180" llimit="180"   ulimit="180"/>
+			    <Axis3 angle="-0.0446727" llimit="0.0446727"   ulimit="0.0446727"/>
+
+
+			    <Segment name="r_clavicle_r_upperarm" type="Euler_Link" index="0" translation="0 0 54.6203">
+
+			      <Joint name="Bip01_R_UpperArm" type="Euler_JointXYZ" num_childs="1">
+				<Axis1 angle="6.15483" llimit="-65"   ulimit="90"/>
+				<Axis2 angle="-1.40038" llimit="-120"   ulimit="65"/>
+				<Axis3 angle="-6.4724" llimit="-90"   ulimit="90"/>
+
+
+				
+
+				<Segment name="r_upperarm_r_forearm" type="Euler_Link" index="0" translation="0 0 138.652">
+
+				  <Joint name="Bip01_R_Forearm" type="Euler_JointXYZ" num_childs="1">
+				    <Axis1 angle="6" llimit="-130"   ulimit="90"/>																	
+				    <Axis2 angle="-8.95911" llimit="-130"   ulimit="0"/>
+				    <Axis3 angle="6" llimit="-130"   ulimit="90"/>
+
+
+
+				    <Segment name="r_forearm_r_hand" type="Euler_Link" index="0" translation="0 0 120.045">
+
+				      <Joint name="Bip01_R_Hand" type="Euler_JointXYZ" num_childs="4">
+					<Axis1 angle="-20.9891" llimit="-70"   ulimit="70"/>
+					<Axis2 angle="0.0117744" llimit="-25"   ulimit="25"/>
+					<Axis3 angle="89" llimit="0"   ulimit="110"/>
+
+					<!-- **************************  RIGHT THUMB ******************************** -->
+					<Segment name="r_hand_r_finger0" type="Euler_Link" index="0" translation="0 0 10">
+
+					  <Joint name="Bip01_R_Finger0" type="Euler_JointXYZ" num_childs="1">
+					    <Axis1 angle="-42.5677" llimit="-180"   ulimit="180"/>
+					    <Axis2 angle="9.93893" llimit="-180"   ulimit="180"/>																			
+					    <Axis3 angle="-0.747018" llimit="-180"   ulimit="180"/>																			
+
+					    <Segment name="r_finger0_r_finger01" type="Euler_Link" index="0" translation="0 0 10">
+
+					      <Joint name="Bip01_R_Finger01" type="Euler_JointXYZ" num_childs="">
+						<Axis1 angle="0" llimit="-180"   ulimit="180"/>																			
+						<Axis2 angle="4.99997" llimit="-180"   ulimit="180"/>
+						<Axis3 angle="0" llimit="-180"   ulimit="180"/>																			
+					      </Joint> 
+					    </Segment>
+					  </Joint> 
+					</Segment>
+					<!-- **************************  END RIGHT THUMB ******************************** -->
+					<!-- **************************  RIGHT POINTING FINGER ******************************** -->
+					<Segment name="r_hand_r_finger1" type="Euler_Link" index="1" translation="0 0 10">
+
+					  <Joint name="Bip01_R_Finger1" type="Euler_JointXYZ" num_childs="1">
+					    <Axis1 angle="-4.37622" llimit="-180"   ulimit="180"/>																					
+					    <Axis2 angle="13.4564" llimit="-180"   ulimit="180"/>
+					    <Axis3 angle="1.09497 " llimit="-180"   ulimit="180"/>																			
+					    
+
+					    <Segment name="r_finger1_r_finger11" type="Euler_Link" index="0" translation="0 0 10">
+
+					      <Joint name="Bip01_R_Finger11" type="Euler_JointXYZ" num_childs="">
+						<Axis1 angle="0" llimit="-180"   ulimit="180"/>																			
+						<Axis2 angle="15" llimit="-180"   ulimit="180"/>
+						<Axis3 angle="0" llimit="-180"   ulimit="180"/>																			
+					      </Joint> 
+					    </Segment>
+					  </Joint> 
+					</Segment>
+					<!-- **************************  END RIGHT POINTING FINGER ******************************** -->
+					<!-- **************************  RIGHT MIDDLE FINGER ******************************** -->
+					<Segment name="r_hand_r_finger2" type="Euler_Link" index="2" translation="0 0 10">
+
+					  <Joint name="Bip01_R_Finger2" type="Euler_JointXYZ" num_childs="1">
+					    <Axis1 angle="0" llimit="-180"   ulimit="180"/>																					
+					    <Axis2 angle="10" llimit="-180"   ulimit="180"/>
+					    <Axis3 angle="0.0456255" llimit="-180"   ulimit="180"/>																			
+					    
+
+					    <Segment name="r_finger2_r_finger21" type="Euler_Link" index="0" translation="0 0 10">
+
+					      <Joint name="Bip01_R_Finger21" type="Euler_JointXYZ" num_childs="">
+						<Axis1 angle="0" llimit="-180"   ulimit="180"/>																			
+						<Axis2 angle="17" llimit="-180"   ulimit="180"/>
+						<Axis3 angle="0" llimit="-180"   ulimit="180"/>																			
+					      </Joint> 
+					    </Segment>
+					  </Joint> 
+					</Segment>
+					<!-- **************************  END RIGHT MIDDLE FINGER ******************************** -->
+					<!-- **************************  RIGHT RING FINGER ******************************** -->
+					<Segment name="r_hand_r_finger3" type="Euler_Link" index="3" translation="0 0 10">
+
+					  <Joint name="Bip01_R_Finger3" type="Euler_JointXYZ" num_childs="1">
+					    <Axis1 angle="4.81894" llimit="-180"   ulimit="180"/>																					
+					    <Axis2 angle="15.4477" llimit="-180"   ulimit="180"/>
+					    <Axis3 angle="-1.28915" llimit="-180"   ulimit="180"/>																			
+					    
+
+					    <Segment name="r_finger3_r_finger31" type="Euler_Link" index="0" translation="0 0 10">
+
+					      <Joint name="Bip01_R_Finger31" type="Euler_JointXYZ" num_childs="">
+						<Axis1 angle="0" llimit="-180"   ulimit="180"/>																			
+						<Axis2 angle="21.5" llimit="-180"   ulimit="180"/>
+						<Axis3 angle="0" llimit="-180"   ulimit="180"/>																			
+					      </Joint> 
+					    </Segment>
+					  </Joint> 
+					</Segment>
+					<!-- **************************  END RIGHT RING FINGER ******************************** -->
+
+				      </Joint>  
+				    </Segment>
+				  </Joint> 
+				</Segment>
+			      </Joint> 
+			    </Segment>	
+			  </Joint> 
+			</Segment>
+
+			<!-- **************************  END RIGHT ARM ******************************** -->
+
+			<!-- **************************  HEAD  ******************************** -->
+
+			<Segment name="neck_head" type="Align_Link" index="2" rotation="0 0 0" translation="0 0 51.7296">
+
+			  <Joint name="Bip01_Head" type="Euler_JointXYZ" num_childs="4">
+			    <Axis1 angle="0" llimit="-180"   ulimit="180"/>
+			    <Axis2 angle="15.4543" llimit="-180"   ulimit="180"/>
+			    <Axis3 angle="0" llimit="-180"   ulimit="180"/>
+
+
+			    <Segment name="head_l_eye" type="Align_Link" index="0" rotation="0 0 0" translation="141 32 -101">
+
+			      <Joint name="Bip01H_L_Eye" type="Euler_JointXYZ" num_childs="0">
+				<Axis1 angle="0" llimit="-180"   ulimit="180"/>
+				<Axis2 angle="4" llimit="-180"   ulimit="180"/>
+				<Axis3 angle="3" llimit="-180"   ulimit="180"/>
+			      </Joint> 
+			    </Segment>
+
+			    <Segment name="head_r_eye" type="Align_Link" index="1" rotation="0 0 0" translation="141 -32 -101">
+
+			      <Joint name="Bip01H_R_Eye" type="Euler_JointXYZ" num_childs="0">
+				<Axis1 angle="0" llimit="-180"   ulimit="180"/>
+				<Axis2 angle="-4" llimit="-180"   ulimit="180"/>
+				<Axis3 angle="3" llimit="-180"   ulimit="180"/>
+			      </Joint> 
+			    </Segment>
+
+			    <Segment name="head_eyepiece" type="Align_Link" index="2" rotation="0 0 0" translation="0 0 0">
+			      <Joint name="Bip01H_Eyepiece" type="Euler_JointXYZ" num_childs="0">
+						<Axis1 angle="20" llimit="0"   ulimit="100"/>
+						<Axis2 angle="0" llimit="0"   ulimit="0"/>
+						<Axis3 angle="0" llimit="0"   ulimit="0"/>
+						<Shape type="GeomObject" src="sphere" translation="0 0 0" rotation="0 0 0" scale="1 1 1"/>
+			      </Joint> 
+			    </Segment>
+
+			    <Segment name="head_mouth" type="Align_Link" index="3" rotation="0 0 0" translation="100 0 -100">
+
+			      <Joint name="Bip01H_Mouth" type="Euler_JointXYZ" num_childs="0">
+				<Axis1 angle="0" llimit="-180"   ulimit="180"/>
+				<Axis2 angle="0" llimit="0"   ulimit="0"/>
+				<Axis3 angle="0" llimit="0"   ulimit="0"/>
+			      </Joint> 
+			    </Segment>
+
+
+
+			  </Joint> 
+			</Segment>
+
+			<!-- **************************  END HEAD ******************************** -->
+		      </Joint>											
+		    </Segment>
+		  </Joint>
+		</Segment>
+	      </Joint>
+	    </Segment>
+	  </Joint>
+	</Segment>
+
+	<!-- **************************  LEFT LEG ******************************** -->
+	<Segment name="spine_l_thigh" type="Align_Link" index="1" rotation="0 0 0" translation="0 71.0553 0">  
+	  <Joint name="Bip01_L_Thigh" type="Euler_JointXYZ" num_childs="1">
+	    <Axis1 angle="-172.402" llimit="-180"   ulimit="-145"/>		
+	    <Axis2 angle="7.99169" llimit="-45"   ulimit="120"/>
+	    <Axis3 angle="-14.2698" llimit="-180"   ulimit="180"/>
+
+
+
+	    <Segment name="l_thigh_l_calf" type="Euler_Link" index="0" translation="0 0 138.236"> 
+
+	      <Joint name="Bip01_L_Calf" type="Euler_JointXYZ" num_childs="1">
+		<Axis1 angle="0" llimit="0"   ulimit="0"/>
+		<Axis2 angle="-17.9156" llimit="-120"   ulimit="0"/>
+		<Axis3 angle="0" llimit="0"   ulimit="0"/>
+
+
+
+
+		<Segment name="l_calf_l_foot" type="Euler_Link" index="0" translation="0 0 123.768">
+
+		  <Joint name="Bip01_L_Foot" type="Euler_JointXYZ" num_childs="0">
+		    <Axis1 angle="-6.61689" llimit="-180"   ulimit="180"/>
+		    <Axis2 angle="8.06058 " llimit="-180"   ulimit="180"/>
+		    <Axis3 angle="5.87141" llimit="-180"   ulimit="180"/>
+
+		  </Joint> 
+		</Segment>
+	      </Joint> 
+	    </Segment>	
+	  </Joint>  
+	</Segment>
+
+	<!-- **************************  END LEFT LEG ******************************** -->
+
+	<!-- **************************  RIGHT LEG ******************************** -->
+	<Segment name="spine_r_thigh" type="Align_Link" index="2" rotation="0 0 0" translation="0 -71.0552 0">
+
+	  <Joint name="Bip01_R_Thigh" type="Euler_JointXYZ" num_childs="1">
+	    <Axis1 angle="170.644" llimit="145"   ulimit="180"/>		
+	    <Axis2 angle="7.72934" llimit="-45"   ulimit="120"/>
+	    <Axis3 angle="14.2661" llimit="-180"   ulimit="180"/>
+	    
+
+
+	    <Segment name="r_thigh_r_calf" type="Euler_Link" index="0" translation="0 0 138.236">
+
+	      <Joint name="Bip01_R_Calf" type="Euler_JointXYZ" num_childs="1">
+		<Axis1 angle="0" llimit="0"   ulimit="0"/>
+		<Axis2 angle="-17.3557" llimit="-120"   ulimit="0"/>
+		<Axis3 angle="0" llimit="0"   ulimit="0"/>
+
+
+		<Segment name="r_calf_r_foot" type="Euler_Link" index="0" translation="0 0 123.768">
+
+		  <Joint name="Bip01_R_Foot" type="Euler_JointXYZ" num_childs="0">
+		    <Axis1 angle="8.37569" llimit="-180"   ulimit="180"/>
+		    <Axis2 angle="7.29468" llimit="-180"   ulimit="180"/>
+		    <Axis3 angle="-6.05948" llimit="-180"   ulimit="180"/>
+
+
+
+		  </Joint>  
+		</Segment>
+	      </Joint>  
+	    </Segment>	
+	  </Joint>  
+	</Segment>
+
+	<!-- **************************  END RIGHT LEG ******************************** -->
+
+      </Joint>
+    </Segment>
+  </Joint>   
+
+</Humanoid>

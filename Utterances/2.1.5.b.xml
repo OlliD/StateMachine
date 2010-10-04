@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE definition SYSTEM "./utterances.dtd">
+<definition>
+
+  <utterance>
+    <specification>
+     Der Vormittag ist noch jung. Sind Sie bereit für eine weitere Übung?
+    </specification>
+  </utterance>
+
+</definition>

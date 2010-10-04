@@ -1,0 +1,192 @@
+/****************************************************************************
+** Meta object code from reading C++ file 'qscriptedstatemachine.cpp'
+**
+** Created: Fri Aug 13 10:07:57 2010
+**      by: The Qt Meta Object Compiler version 62 (Qt 4.6.2)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#if !defined(Q_MOC_OUTPUT_REVISION)
+#error "The header file 'qscriptedstatemachine.cpp' doesn't include <QObject>."
+#elif Q_MOC_OUTPUT_REVISION != 62
+#error "This file was generated using the moc from 4.6.2. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+QT_BEGIN_MOC_NAMESPACE
+static const uint qt_meta_data_QtSsmTimer[] = {
+
+ // content:
+       4,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       0,    0, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_QtSsmTimer[] = {
+    "QtSsmTimer\0"
+};
+
+const QMetaObject QtSsmTimer::staticMetaObject = {
+    { &QObject::staticMetaObject, qt_meta_stringdata_QtSsmTimer,
+      qt_meta_data_QtSsmTimer, 0 }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &QtSsmTimer::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *QtSsmTimer::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *QtSsmTimer::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_QtSsmTimer))
+        return static_cast<void*>(const_cast< QtSsmTimer*>(this));
+    return QObject::qt_metacast(_clname);
+}
+
+int QtSsmTimer::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QObject::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    return _id;
+}
+static const uint qt_meta_data_QtSsmDefaultInvoker[] = {
+
+ // content:
+       4,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       2,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+ // slots: signature, parameters, type, tag, flags
+      21,   20,   20,   20, 0x0a,
+      32,   20,   20,   20, 0x0a,
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_QtSsmDefaultInvoker[] = {
+    "QtSsmDefaultInvoker\0\0activate()\0"
+    "cancel()\0"
+};
+
+const QMetaObject QtSsmDefaultInvoker::staticMetaObject = {
+    { &QtSsmInvoker::staticMetaObject, qt_meta_stringdata_QtSsmDefaultInvoker,
+      qt_meta_data_QtSsmDefaultInvoker, 0 }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &QtSsmDefaultInvoker::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *QtSsmDefaultInvoker::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *QtSsmDefaultInvoker::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_QtSsmDefaultInvoker))
+        return static_cast<void*>(const_cast< QtSsmDefaultInvoker*>(this));
+    return QtSsmInvoker::qt_metacast(_clname);
+}
+
+int QtSsmDefaultInvoker::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QtSsmInvoker::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        switch (_id) {
+        case 0: activate(); break;
+        case 1: cancel(); break;
+        default: ;
+        }
+        _id -= 2;
+    }
+    return _id;
+}
+static const uint qt_meta_data_QtSsmBindingInvoker[] = {
+
+ // content:
+       4,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       2,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+ // slots: signature, parameters, type, tag, flags
+      21,   20,   20,   20, 0x0a,
+      32,   20,   20,   20, 0x0a,
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_QtSsmBindingInvoker[] = {
+    "QtSsmBindingInvoker\0\0activate()\0"
+    "cancel()\0"
+};
+
+const QMetaObject QtSsmBindingInvoker::staticMetaObject = {
+    { &QtSsmInvoker::staticMetaObject, qt_meta_stringdata_QtSsmBindingInvoker,
+      qt_meta_data_QtSsmBindingInvoker, 0 }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &QtSsmBindingInvoker::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *QtSsmBindingInvoker::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *QtSsmBindingInvoker::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_QtSsmBindingInvoker))
+        return static_cast<void*>(const_cast< QtSsmBindingInvoker*>(this));
+    return QtSsmInvoker::qt_metacast(_clname);
+}
+
+int QtSsmBindingInvoker::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QtSsmInvoker::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        switch (_id) {
+        case 0: activate(); break;
+        case 1: cancel(); break;
+        default: ;
+        }
+        _id -= 2;
+    }
+    return _id;
+}
+QT_END_MOC_NAMESPACE

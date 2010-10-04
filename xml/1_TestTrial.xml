@@ -1,0 +1,12 @@
+<scxml xmlns="http://www.w3.org/2005/07/scxml" initial="firstUse">
+  
+	<state id="firstUse">
+		<transition event="q-signal:smEngine.yesSignal()" target="dataWidget">
+		</transition>
+		<transition event="q-signal:smEngine.noSignal()" target="checkDay">
+		</transition>
+		<onentry>
+			<script>smEngine.logStateMachine("firstUse"), smEngine.showWidget("infoWidget")</script>
+		</onentry>
+	</state>
+</scxml>

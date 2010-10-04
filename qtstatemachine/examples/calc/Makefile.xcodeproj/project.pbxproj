@@ -1,0 +1,1207 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+		D7BA7D76DAB5DD13389D6332 = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			generatedFileNames = (
+				);
+			isa = PBXShellScriptBuildPhase;
+			name = "Qt Qmake";
+			neededFileNames = (
+				);
+			shellPath = "/bin/sh";
+			shellScript = "make\ -C\ /Users/odamm/StateMachine/qtstatemachine/examples/calc\ -f\ Makefile.xcodeproj/qt_makeqmake.mak";
+		};
+		4BD92A8819613B70608CE09E = {
+			isa = PBXFileReference;
+			name = "qstatemachine.cpp";
+			path = "../../src/qstatemachine.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		9881B84A571960740E651F97 = {
+			fileRef = "4BD92A8819613B70608CE09E";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		39804AC7592386E6F9A4166B = {
+			isa = PBXFileReference;
+			name = "qstateaction.cpp";
+			path = "../../src/qstateaction.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		79E05B6832CB115230D4F682 = {
+			fileRef = "39804AC7592386E6F9A4166B";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		5FA540A4E6EC19051E04424E = {
+			isa = PBXFileReference;
+			name = "qabstractstate.cpp";
+			path = "../../src/qabstractstate.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		B62DE09F1BC5FFE9896ECBE6 = {
+			fileRef = "5FA540A4E6EC19051E04424E";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		DF55C8A767835991651E5FFC = {
+			isa = PBXFileReference;
+			name = "qactionstate.cpp";
+			path = "../../src/qactionstate.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		E417932F5EE76609E49B2FEB = {
+			fileRef = "DF55C8A767835991651E5FFC";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		05E5C7F903E21608D6FAF5C1 = {
+			isa = PBXFileReference;
+			name = "qstate.cpp";
+			path = "../../src/qstate.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		71367CCACE87B085DA4F6A84 = {
+			fileRef = "05E5C7F903E21608D6FAF5C1";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		022D4419C7DB142AB9E180B8 = {
+			isa = PBXFileReference;
+			name = "qfinalstate.cpp";
+			path = "../../src/qfinalstate.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		1D80E1784ED2265D095C0EC6 = {
+			fileRef = "022D4419C7DB142AB9E180B8";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		F521EB7AF7C76ED58F70B8F1 = {
+			isa = PBXFileReference;
+			name = "qhistorystate.cpp";
+			path = "../../src/qhistorystate.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		4FEFB60B18C4E5A71457243D = {
+			fileRef = "F521EB7AF7C76ED58F70B8F1";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		760597585882AA0631B109C6 = {
+			isa = PBXFileReference;
+			name = "qabstracttransition.cpp";
+			path = "../../src/qabstracttransition.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		F6565ED1390F2E3BAB6F01E5 = {
+			fileRef = "760597585882AA0631B109C6";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		4F067F5A6CAF35E9D24A5B14 = {
+			isa = PBXFileReference;
+			name = "qtransition.cpp";
+			path = "../../src/qtransition.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		216464874FDED0876A102B2E = {
+			fileRef = "4F067F5A6CAF35E9D24A5B14";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		1B7B9CCAE053D01B2578CCEF = {
+			isa = PBXFileReference;
+			name = "qstatefinishedtransition.cpp";
+			path = "../../src/qstatefinishedtransition.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		4D0DF9D568BCF7432D3AC0F8 = {
+			fileRef = "1B7B9CCAE053D01B2578CCEF";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		93457016E02FA479BCC88871 = {
+			isa = PBXFileReference;
+			name = "qsignaltransition.cpp";
+			path = "../../src/qsignaltransition.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		E6BA5D79363C3BE26FF8E1B9 = {
+			fileRef = "93457016E02FA479BCC88871";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		B7D106283261050EB75869CC = {
+			isa = PBXFileReference;
+			name = "qeventtransition.cpp";
+			path = "../../src/qeventtransition.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		2EDE9D4BE123DD05A38508CC = {
+			fileRef = "B7D106283261050EB75869CC";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		1080ABAF66352F3EE82551F1 = {
+			isa = PBXFileReference;
+			name = "qscriptedstatemachine.cpp";
+			path = "../../src/qscriptedstatemachine.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		92D97C9E3D08223319B44C68 = {
+			fileRef = "1080ABAF66352F3EE82551F1";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		48C883F8EABE5FCB2F9B08ED = {
+			isa = PBXFileReference;
+			name = "qssmguiinvokers.cpp";
+			path = "../../src/qssmguiinvokers.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		0C6C36C03C47485B12545BE8 = {
+			fileRef = "48C883F8EABE5FCB2F9B08ED";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		2F06D2D694959275937E85D4 = {
+			isa = PBXFileReference;
+			name = "qguistatemachine.cpp";
+			path = "../../src/qguistatemachine.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		2030C84B47CE37FE6819F619 = {
+			fileRef = "2F06D2D694959275937E85D4";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		118FCBAABA162BA17933C789 = {
+			isa = PBXFileReference;
+			name = "main.cpp";
+			path = "main.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		2B093CA6F071B023A473CED0 = {
+			fileRef = "118FCBAABA162BA17933C789";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		04C15CA2A3C39D2BA94DCF1E = {
+			isa = PBXFileReference;
+			name = "calc.cpp";
+			path = "calc.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		BF6EC53BB3DB2611402AFC02 = {
+			fileRef = "04C15CA2A3C39D2BA94DCF1E";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		16417FE8F507030806114DFF = {
+			isa = PBXFileReference;
+			name = "moc_qstateaction.cpp";
+			path = "moc_qstateaction.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		DFE91526978333C033886F35 = {
+			fileRef = "16417FE8F507030806114DFF";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		AB0849457CE80E6A0B3C1525 = {
+			isa = PBXFileReference;
+			name = "moc_qabstractstate.cpp";
+			path = "moc_qabstractstate.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		61EDD898C4E761BE113A01C1 = {
+			fileRef = "AB0849457CE80E6A0B3C1525";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		8E42973A55C09BEEFA9FA7B7 = {
+			isa = PBXFileReference;
+			name = "moc_qactionstate.cpp";
+			path = "moc_qactionstate.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		04FE8E1EE1331603456E861A = {
+			fileRef = "8E42973A55C09BEEFA9FA7B7";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		659729CE14813442851725F8 = {
+			isa = PBXFileReference;
+			name = "moc_qstate.cpp";
+			path = "moc_qstate.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		6064B31530D109C0216B2317 = {
+			fileRef = "659729CE14813442851725F8";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		6862334F3DBB331EF33AABCC = {
+			isa = PBXFileReference;
+			name = "moc_qfinalstate.cpp";
+			path = "moc_qfinalstate.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		15136B807068F79AE13DAC8D = {
+			fileRef = "6862334F3DBB331EF33AABCC";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		F2A442EF04D2A3AC682786F1 = {
+			isa = PBXFileReference;
+			name = "moc_qhistorystate.cpp";
+			path = "moc_qhistorystate.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		3576A02B07316F7D380482BB = {
+			fileRef = "F2A442EF04D2A3AC682786F1";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		40D002AACDD7E07A2E8EA9CB = {
+			isa = PBXFileReference;
+			name = "moc_qabstracttransition.cpp";
+			path = "moc_qabstracttransition.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		A80D4938A954175F1AA0730D = {
+			fileRef = "40D002AACDD7E07A2E8EA9CB";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		3368AB593722F524BAE747E8 = {
+			isa = PBXFileReference;
+			name = "moc_qtransition.cpp";
+			path = "moc_qtransition.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		07A62803E05964C0E587E03D = {
+			fileRef = "3368AB593722F524BAE747E8";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		D0C313CEAF0EC79E6FFBE0BE = {
+			isa = PBXFileReference;
+			name = "moc_qstatefinishedtransition.cpp";
+			path = "moc_qstatefinishedtransition.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		5578AF26C1269824B729925E = {
+			fileRef = "D0C313CEAF0EC79E6FFBE0BE";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		E07D250A77E7E23C8BFA61D6 = {
+			isa = PBXFileReference;
+			name = "moc_qsignaltransition.cpp";
+			path = "moc_qsignaltransition.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		DCDB52E71E6786C136271809 = {
+			fileRef = "E07D250A77E7E23C8BFA61D6";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		27853FE7D48A6F91631D3749 = {
+			isa = PBXFileReference;
+			name = "moc_qeventtransition.cpp";
+			path = "moc_qeventtransition.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		E5B2B1961B65AD33B65BEB50 = {
+			fileRef = "27853FE7D48A6F91631D3749";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		B85D577DED09FE2C8D3FDD4A = {
+			isa = PBXFileReference;
+			name = "moc_qscriptedstatemachine.cpp";
+			path = "moc_qscriptedstatemachine.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		F399B54A946D420B0D80E423 = {
+			fileRef = "B85D577DED09FE2C8D3FDD4A";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		7CA89CD992378A4EB8C432C3 = {
+			isa = PBXFileReference;
+			name = "moc_qssmguiinvokers_p.cpp";
+			path = "moc_qssmguiinvokers_p.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		B2F8CFF63F1B61BD5669BBBE = {
+			fileRef = "7CA89CD992378A4EB8C432C3";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		37454EC4813C2096942A3D84 = {
+			isa = PBXFileReference;
+			name = "moc_calc.cpp";
+			path = "moc_calc.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		5565116A5FD182C1962C6046 = {
+			fileRef = "37454EC4813C2096942A3D84";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		90F0CEB91313386957A7473B = {
+			isa = PBXFileReference;
+			name = "qrc_calc.cpp";
+			path = "qrc_calc.cpp";
+			refType = 4;
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		969BCE8AEAAD9CB09935F7D8 = {
+			fileRef = "90F0CEB91313386957A7473B";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		23BA20B523AF0C702E5AB3C2 = {
+			isa = PBXFileReference;
+			name = "ui_calc.h";
+			path = "ui_calc.h";
+			refType = 4;
+		};
+		639296D47BD3616109EB0A4B = {
+			isa = PBXFileReference;
+			name = "qstatemachine.h";
+			path = "../../src/qstatemachine.h";
+			refType = 4;
+		};
+		92DCE3D44D57DAB3B06ECD5A = {
+			isa = PBXFileReference;
+			name = "qstatemachine_p.h";
+			path = "../../src/qstatemachine_p.h";
+			refType = 4;
+		};
+		99E4F7075E6F0D0A4D154EE4 = {
+			isa = PBXFileReference;
+			name = "qstateaction.h";
+			path = "../../src/qstateaction.h";
+			refType = 4;
+		};
+		102A7BAB1DC4BE87DA536301 = {
+			isa = PBXFileReference;
+			name = "qstateaction_p.h";
+			path = "../../src/qstateaction_p.h";
+			refType = 4;
+		};
+		6878155D24FD066A15004AD6 = {
+			isa = PBXFileReference;
+			name = "qsignaleventgenerator_p.h";
+			path = "../../src/qsignaleventgenerator_p.h";
+			refType = 4;
+		};
+		940ABAB8A9FB5668B4C91A4A = {
+			isa = PBXFileReference;
+			name = "qabstractstate.h";
+			path = "../../src/qabstractstate.h";
+			refType = 4;
+		};
+		F05AA7D07D84B26AA4DF8583 = {
+			isa = PBXFileReference;
+			name = "qabstractstate_p.h";
+			path = "../../src/qabstractstate_p.h";
+			refType = 4;
+		};
+		994E33ED9FE11DB8FCFE55D1 = {
+			isa = PBXFileReference;
+			name = "qactionstate.h";
+			path = "../../src/qactionstate.h";
+			refType = 4;
+		};
+		B232770BA3594F151435057B = {
+			isa = PBXFileReference;
+			name = "qactionstate_p.h";
+			path = "../../src/qactionstate_p.h";
+			refType = 4;
+		};
+		0AAA46DC096757ACE7790F85 = {
+			isa = PBXFileReference;
+			name = "qstate.h";
+			path = "../../src/qstate.h";
+			refType = 4;
+		};
+		0F78E17B1F4D7C7F07EC47B3 = {
+			isa = PBXFileReference;
+			name = "qstate_p.h";
+			path = "../../src/qstate_p.h";
+			refType = 4;
+		};
+		D9D70F4102A547F7E9C3FADF = {
+			isa = PBXFileReference;
+			name = "qfinalstate.h";
+			path = "../../src/qfinalstate.h";
+			refType = 4;
+		};
+		4C8739CB7729694759AFEBDB = {
+			isa = PBXFileReference;
+			name = "qhistorystate.h";
+			path = "../../src/qhistorystate.h";
+			refType = 4;
+		};
+		18A928AEE3A39E3BE55E148F = {
+			isa = PBXFileReference;
+			name = "qhistorystate_p.h";
+			path = "../../src/qhistorystate_p.h";
+			refType = 4;
+		};
+		E1F5F31C57A6ED750BBB616A = {
+			isa = PBXFileReference;
+			name = "qabstracttransition.h";
+			path = "../../src/qabstracttransition.h";
+			refType = 4;
+		};
+		0914E00FBEDE9A69C151EC04 = {
+			isa = PBXFileReference;
+			name = "qabstracttransition_p.h";
+			path = "../../src/qabstracttransition_p.h";
+			refType = 4;
+		};
+		D73EC1F2504FECA0764F0CCE = {
+			isa = PBXFileReference;
+			name = "qtransition.h";
+			path = "../../src/qtransition.h";
+			refType = 4;
+		};
+		FD99802B31823983EA4F1198 = {
+			isa = PBXFileReference;
+			name = "qtransition_p.h";
+			path = "../../src/qtransition_p.h";
+			refType = 4;
+		};
+		086B0037E340A5E921F14954 = {
+			isa = PBXFileReference;
+			name = "qstatefinishedevent.h";
+			path = "../../src/qstatefinishedevent.h";
+			refType = 4;
+		};
+		9FC7A102E6DC7AF6392EFF3E = {
+			isa = PBXFileReference;
+			name = "qstatefinishedtransition.h";
+			path = "../../src/qstatefinishedtransition.h";
+			refType = 4;
+		};
+		298B5C0AF9FBE43AE8831BB2 = {
+			isa = PBXFileReference;
+			name = "qsignalevent.h";
+			path = "../../src/qsignalevent.h";
+			refType = 4;
+		};
+		1B1BE6B73C642A5274325008 = {
+			isa = PBXFileReference;
+			name = "qsignaltransition.h";
+			path = "../../src/qsignaltransition.h";
+			refType = 4;
+		};
+		085B7919F28B50E1677A89D3 = {
+			isa = PBXFileReference;
+			name = "qsignaltransition_p.h";
+			path = "../../src/qsignaltransition_p.h";
+			refType = 4;
+		};
+		36AE99B71FD6B47BAE68252D = {
+			isa = PBXFileReference;
+			name = "qboundevent_p.h";
+			path = "../../src/qboundevent_p.h";
+			refType = 4;
+		};
+		444565ADF30EDDC9538580A4 = {
+			isa = PBXFileReference;
+			name = "qeventtransition.h";
+			path = "../../src/qeventtransition.h";
+			refType = 4;
+		};
+		986C036424D4E1D06B4BD9ED = {
+			isa = PBXFileReference;
+			name = "qeventtransition_p.h";
+			path = "../../src/qeventtransition_p.h";
+			refType = 4;
+		};
+		38F448640A9653341DA32BD5 = {
+			isa = PBXFileReference;
+			name = "qscriptedstatemachine.h";
+			path = "../../src/qscriptedstatemachine.h";
+			refType = 4;
+		};
+		982BF73045508B190302FC37 = {
+			isa = PBXFileReference;
+			name = "qssmguiinvokers_p.h";
+			path = "../../src/qssmguiinvokers_p.h";
+			refType = 4;
+		};
+		F863AA0D70B3B37B1520D790 = {
+			isa = PBXFileReference;
+			name = "calc.h";
+			path = "calc.h";
+			refType = 4;
+		};
+		487F68097AB3E766FEEC9931 = {
+			isa = PBXFileReference;
+			name = "calc.pro";
+			path = "calc.pro";
+			refType = 4;
+		};
+		42E857BAF5122B847A911FBA = {
+			isa = PBXFileReference;
+			name = "calc.qrc";
+			path = "calc.qrc";
+			refType = 4;
+		};
+		17C25BECFD6AC1AF0E5A0BAB = {
+			fileRef = "42E857BAF5122B847A911FBA";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		D8BD39973C78EAB9A466AB0A = {
+			isa = PBXFileReference;
+			name = "calc.ui";
+			path = "calc.ui";
+			refType = 4;
+		};
+		AA56287374633D59713F6C37 = {
+			fileRef = "D8BD39973C78EAB9A466AB0A";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		883D7615C4D2DE3FA1218F12 = {
+			isa = PBXGroup;
+			children = (
+				"4458B98565818D7E2682FA2D",
+				"F863AA0D70B3B37B1520D790");
+			name = "Headers";
+			refType = 4;
+		};
+		4458B98565818D7E2682FA2D = {
+			isa = PBXGroup;
+			children = (
+				"E11BEA6A53EB481066C2098B");
+			name = "..";
+			refType = 4;
+		};
+		E11BEA6A53EB481066C2098B = {
+			isa = PBXGroup;
+			children = (
+				"9AC69F509D54549C7BFC7A07");
+			name = "..";
+			refType = 4;
+		};
+		9AC69F509D54549C7BFC7A07 = {
+			isa = PBXGroup;
+			children = (
+				"639296D47BD3616109EB0A4B",
+				"92DCE3D44D57DAB3B06ECD5A",
+				"99E4F7075E6F0D0A4D154EE4",
+				"102A7BAB1DC4BE87DA536301",
+				"6878155D24FD066A15004AD6",
+				"940ABAB8A9FB5668B4C91A4A",
+				"F05AA7D07D84B26AA4DF8583",
+				"994E33ED9FE11DB8FCFE55D1",
+				"B232770BA3594F151435057B",
+				"0AAA46DC096757ACE7790F85",
+				"0F78E17B1F4D7C7F07EC47B3",
+				"D9D70F4102A547F7E9C3FADF",
+				"4C8739CB7729694759AFEBDB",
+				"18A928AEE3A39E3BE55E148F",
+				"E1F5F31C57A6ED750BBB616A",
+				"0914E00FBEDE9A69C151EC04",
+				"D73EC1F2504FECA0764F0CCE",
+				"FD99802B31823983EA4F1198",
+				"086B0037E340A5E921F14954",
+				"9FC7A102E6DC7AF6392EFF3E",
+				"298B5C0AF9FBE43AE8831BB2",
+				"1B1BE6B73C642A5274325008",
+				"085B7919F28B50E1677A89D3",
+				"36AE99B71FD6B47BAE68252D",
+				"444565ADF30EDDC9538580A4",
+				"986C036424D4E1D06B4BD9ED",
+				"38F448640A9653341DA32BD5",
+				"982BF73045508B190302FC37");
+			name = "src";
+			refType = 4;
+		};
+		BFA3A29D17FD123C907B6E35 = {
+			isa = PBXGroup;
+			children = (
+				"DCB318ABE7A96AA736975C2A");
+			name = "..";
+			refType = 4;
+		};
+		DCB318ABE7A96AA736975C2A = {
+			isa = PBXGroup;
+			children = (
+				"F0BDEA78D90C87903ED83CE9");
+			name = "..";
+			refType = 4;
+		};
+		F0BDEA78D90C87903ED83CE9 = {
+			isa = PBXGroup;
+			children = (
+				"4BD92A8819613B70608CE09E",
+				"39804AC7592386E6F9A4166B",
+				"5FA540A4E6EC19051E04424E",
+				"DF55C8A767835991651E5FFC",
+				"05E5C7F903E21608D6FAF5C1",
+				"022D4419C7DB142AB9E180B8",
+				"F521EB7AF7C76ED58F70B8F1",
+				"760597585882AA0631B109C6",
+				"4F067F5A6CAF35E9D24A5B14",
+				"1B7B9CCAE053D01B2578CCEF",
+				"93457016E02FA479BCC88871",
+				"B7D106283261050EB75869CC",
+				"1080ABAF66352F3EE82551F1",
+				"48C883F8EABE5FCB2F9B08ED",
+				"2F06D2D694959275937E85D4");
+			name = "src";
+			refType = 4;
+		};
+		FB61758D0F0FDA4BA867C3D5 = {
+			isa = PBXGroup;
+			children = (
+				"BFA3A29D17FD123C907B6E35",
+				"118FCBAABA162BA17933C789",
+				"04C15CA2A3C39D2BA94DCF1E");
+			name = "Sources";
+			refType = 4;
+		};
+		52C235EBF1C9B07808119459 = {
+			isa = PBXGroup;
+			children = (
+				"42E857BAF5122B847A911FBA");
+			name = "Sources [RCC]";
+			refType = 4;
+		};
+		EEC299C65D5017EB9DD513B0 = {
+			isa = PBXGroup;
+			children = (
+				"D8BD39973C78EAB9A466AB0A");
+			name = "Sources [UIC]";
+			refType = 4;
+		};
+		7CABE3C80E79AD2B307756D2 = {
+			isa = PBXGroup;
+			children = (
+				"487F68097AB3E766FEEC9931");
+			name = "Sources [qmake]";
+			refType = 4;
+		};
+		46E892BBB6BB6952967E0561 = {
+			isa = PBXGroup;
+			children = (
+				"16417FE8F507030806114DFF",
+				"AB0849457CE80E6A0B3C1525",
+				"8E42973A55C09BEEFA9FA7B7",
+				"659729CE14813442851725F8",
+				"6862334F3DBB331EF33AABCC",
+				"F2A442EF04D2A3AC682786F1",
+				"40D002AACDD7E07A2E8EA9CB",
+				"3368AB593722F524BAE747E8",
+				"D0C313CEAF0EC79E6FFBE0BE",
+				"E07D250A77E7E23C8BFA61D6",
+				"27853FE7D48A6F91631D3749",
+				"B85D577DED09FE2C8D3FDD4A",
+				"7CA89CD992378A4EB8C432C3",
+				"37454EC4813C2096942A3D84",
+				"90F0CEB91313386957A7473B",
+				"23BA20B523AF0C702E5AB3C2");
+			name = "Temporary Sources";
+			refType = 4;
+		};
+		A0A52A2ADF7A1E2A99738674 = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			generatedFileNames = (
+				"9881B84A571960740E651F97",
+				"79E05B6832CB115230D4F682",
+				"B62DE09F1BC5FFE9896ECBE6",
+				"E417932F5EE76609E49B2FEB",
+				"71367CCACE87B085DA4F6A84",
+				"1D80E1784ED2265D095C0EC6",
+				"4FEFB60B18C4E5A71457243D",
+				"F6565ED1390F2E3BAB6F01E5",
+				"216464874FDED0876A102B2E",
+				"4D0DF9D568BCF7432D3AC0F8",
+				"E6BA5D79363C3BE26FF8E1B9",
+				"2EDE9D4BE123DD05A38508CC",
+				"92D97C9E3D08223319B44C68",
+				"0C6C36C03C47485B12545BE8",
+				"2030C84B47CE37FE6819F619",
+				"2B093CA6F071B023A473CED0",
+				"BF6EC53BB3DB2611402AFC02",
+				"DFE91526978333C033886F35",
+				"61EDD898C4E761BE113A01C1",
+				"04FE8E1EE1331603456E861A",
+				"6064B31530D109C0216B2317",
+				"15136B807068F79AE13DAC8D",
+				"3576A02B07316F7D380482BB",
+				"A80D4938A954175F1AA0730D",
+				"07A62803E05964C0E587E03D",
+				"5578AF26C1269824B729925E",
+				"DCDB52E71E6786C136271809",
+				"E5B2B1961B65AD33B65BEB50",
+				"F399B54A946D420B0D80E423",
+				"B2F8CFF63F1B61BD5669BBBE",
+				"5565116A5FD182C1962C6046",
+				"969BCE8AEAAD9CB09935F7D8");
+			isa = PBXShellScriptBuildPhase;
+			name = "Qt Preprocessors";
+			neededFileNames = (
+				"9881B84A571960740E651F97",
+				"79E05B6832CB115230D4F682",
+				"B62DE09F1BC5FFE9896ECBE6",
+				"E417932F5EE76609E49B2FEB",
+				"71367CCACE87B085DA4F6A84",
+				"1D80E1784ED2265D095C0EC6",
+				"4FEFB60B18C4E5A71457243D",
+				"F6565ED1390F2E3BAB6F01E5",
+				"216464874FDED0876A102B2E",
+				"4D0DF9D568BCF7432D3AC0F8",
+				"E6BA5D79363C3BE26FF8E1B9",
+				"2EDE9D4BE123DD05A38508CC",
+				"92D97C9E3D08223319B44C68",
+				"0C6C36C03C47485B12545BE8",
+				"2030C84B47CE37FE6819F619",
+				"2B093CA6F071B023A473CED0",
+				"BF6EC53BB3DB2611402AFC02",
+				"DFE91526978333C033886F35",
+				"61EDD898C4E761BE113A01C1",
+				"04FE8E1EE1331603456E861A",
+				"6064B31530D109C0216B2317",
+				"15136B807068F79AE13DAC8D",
+				"3576A02B07316F7D380482BB",
+				"A80D4938A954175F1AA0730D",
+				"07A62803E05964C0E587E03D",
+				"5578AF26C1269824B729925E",
+				"DCDB52E71E6786C136271809",
+				"E5B2B1961B65AD33B65BEB50",
+				"F399B54A946D420B0D80E423",
+				"B2F8CFF63F1B61BD5669BBBE",
+				"5565116A5FD182C1962C6046",
+				"969BCE8AEAAD9CB09935F7D8");
+			shellPath = "/bin/sh";
+			shellScript = "make\ -C\ /Users/odamm/StateMachine/qtstatemachine/examples/calc\ -f\ Makefile.xcodeproj/qt_preprocess.mak";
+		};
+		C29B8785722055ED95EF7B57 = {
+			buildActionMask = 2147483647;
+			files = (
+				"9881B84A571960740E651F97",
+				"79E05B6832CB115230D4F682",
+				"B62DE09F1BC5FFE9896ECBE6",
+				"E417932F5EE76609E49B2FEB",
+				"71367CCACE87B085DA4F6A84",
+				"1D80E1784ED2265D095C0EC6",
+				"4FEFB60B18C4E5A71457243D",
+				"F6565ED1390F2E3BAB6F01E5",
+				"216464874FDED0876A102B2E",
+				"4D0DF9D568BCF7432D3AC0F8",
+				"E6BA5D79363C3BE26FF8E1B9",
+				"2EDE9D4BE123DD05A38508CC",
+				"92D97C9E3D08223319B44C68",
+				"0C6C36C03C47485B12545BE8",
+				"2030C84B47CE37FE6819F619",
+				"2B093CA6F071B023A473CED0",
+				"BF6EC53BB3DB2611402AFC02",
+				"DFE91526978333C033886F35",
+				"61EDD898C4E761BE113A01C1",
+				"04FE8E1EE1331603456E861A",
+				"6064B31530D109C0216B2317",
+				"15136B807068F79AE13DAC8D",
+				"3576A02B07316F7D380482BB",
+				"A80D4938A954175F1AA0730D",
+				"07A62803E05964C0E587E03D",
+				"5578AF26C1269824B729925E",
+				"DCDB52E71E6786C136271809",
+				"E5B2B1961B65AD33B65BEB50",
+				"F399B54A946D420B0D80E423",
+				"B2F8CFF63F1B61BD5669BBBE",
+				"5565116A5FD182C1962C6046",
+				"969BCE8AEAAD9CB09935F7D8");
+			isa = PBXSourcesBuildPhase;
+			name = "Build Sources";
+		};
+		211E167C6D84B224E0231D07 = {
+			isa = PBXFrameworkReference;
+			name = "QtScript.framework";
+			path = "/Library/Frameworks/QtScript.framework";
+			refType = 0;
+		};
+		FA4EB477BC2C58FB0934CE07 = {
+			fileRef = "211E167C6D84B224E0231D07";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9B36DA7E32F0304E780E7972 = {
+			isa = PBXFrameworkReference;
+			name = "QtGui.framework";
+			path = "/Library/Frameworks/QtGui.framework";
+			refType = 0;
+		};
+		501667F26B3C1FF6767A7C12 = {
+			fileRef = "9B36DA7E32F0304E780E7972";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		7BC2E65A5E699A5E5D834CA2 = {
+			isa = PBXFrameworkReference;
+			name = "QtCore.framework";
+			path = "/Library/Frameworks/QtCore.framework";
+			refType = 0;
+		};
+		069D05B0128AE5DC7EE31738 = {
+			fileRef = "7BC2E65A5E699A5E5D834CA2";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		ED1E82605DD74B483AF3C982 = {
+			children = (
+				"211E167C6D84B224E0231D07",
+				"9B36DA7E32F0304E780E7972",
+				"7BC2E65A5E699A5E5D834CA2");
+			isa = PBXGroup;
+			name = "External Frameworks and Libraries";
+			path = "";
+			refType = 4;
+		};
+		2A1043669E6E5A7426EA502A = {
+			buildActionMask = 2147483647;
+			files = (
+				"FA4EB477BC2C58FB0934CE07",
+				"501667F26B3C1FF6767A7C12",
+				"069D05B0128AE5DC7EE31738");
+			isa = PBXFrameworksBuildPhase;
+			name = "Frameworks & Libraries";
+		};
+		F6069D5A5DA8AA28EDB8B3C6 = {
+			name = "Project Copy";
+			buildActionMask = 2147483647;
+			dstPath = "/Users/odamm/StateMachine/qtstatemachine/examples/calc";
+			dstSubfolderSpec = 0;
+			files = (
+"07E0DFA73EB56DCB9E28CDD9");
+			isa = PBXCopyFilesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07E0DFA73EB56DCB9E28CDD9 = {
+			fileRef = "C806710525D5893EC4B56108";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		05596AB53D8D521C69802C27 = {
+			children = (
+				"FB61758D0F0FDA4BA867C3D5",
+				"46E892BBB6BB6952967E0561",
+				"883D7615C4D2DE3FA1218F12",
+				"7CABE3C80E79AD2B307756D2",
+				"52C235EBF1C9B07808119459",
+				"EEC299C65D5017EB9DD513B0",
+				"ED1E82605DD74B483AF3C982");
+			isa = PBXGroup;
+			name = "calc";
+			path = "";
+			refType = 4;
+		};
+		C806710525D5893EC4B56108 = {
+			isa = PBXFileReference;
+			explicitFileType = "wrapper.executable";
+			path = "calc";
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		068F80C7519D0528FB08E821 = {
+			children = (
+				"C806710525D5893EC4B56108");
+			isa = PBXGroup;
+			name = "Products";
+			refType = 4;
+		};
+		2F4B7972889794A09B3A32AC = {
+			buildPhases = (
+				"D7BA7D76DAB5DD13389D6332",
+				"A0A52A2ADF7A1E2A99738674",
+				"F6069D5A5DA8AA28EDB8B3C6",
+				"C29B8785722055ED95EF7B57",
+				"2A1043669E6E5A7426EA502A");
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"/Library/Frameworks/QtCore.framework/Versions/4/Headers",
+					"/usr/include/QtCore",
+					"/Library/Frameworks/QtGui.framework/Versions/4/Headers",
+					"/usr/include/QtGui",
+					"/Library/Frameworks/QtScript.framework/Versions/4/Headers",
+					"/usr/include/QtScript",
+					"/usr/include",
+					"../../src",
+					".",
+					".",
+					"/usr/local/include",
+					"/System/Library/Frameworks/CarbonCore.framework/Headers",
+					"/usr/local/Qt4.6/mkspecs/macx-xcode");
+				LIBRARY_SEARCH_PATHS = (
+					"/Library/Frameworks");
+				OPTIMIZATION_CFLAGS = (
+					);
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DQT_STATEMACHINE_SOLUTION",
+					"-DQT_NO_ANIMATION",
+					"-DQT_SCRIPT_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DQT_STATEMACHINE_SOLUTION",
+					"-DQT_NO_ANIMATION",
+					"-DQT_SCRIPT_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED");
+				LEXFLAGS = "";
+				YACCFLAGS = "-d";
+				OTHER_REZFLAGS = "";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				PREBINDING = NO;
+				BUILD_ROOT = "/Users/odamm/StateMachine/qtstatemachine/examples/calc";
+				OTHER_LDFLAGS = (
+						"-headerpad_max_install_names",
+						"-L/Library/Frameworks",
+						"-F/Library/Frameworks");
+				DYLIB_CURRENT_VERSION = "1.0.0";
+				DYLIB_COMPATIBILITY_VERSION = "1.0";
+				MACOSX_DEPLOYMENT_TARGET = "10.4";
+				ARCHS = "i386";
+				PRODUCT_NAME = "calc";
+			};
+			conditionalBuildSettings = {
+			};
+			dependencies = (
+				);
+			productReference = "C806710525D5893EC4B56108";
+			shouldUseHeadermap = 1;
+			isa = PBXNativeTarget;
+			productType = "com.apple.product-type.tool";
+			name = "calc";
+			productName = "calc";
+			startupPath = "<<ProjectDirectory>>";
+		};
+		8DB1DD96F65B1BF1FFC506E0 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = "NO";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "YES";
+				GCC_OPTIMIZATION_LEVEL = "0";
+			};
+			name = "Debug";
+		};
+		2C641C3335766025DD51B7BD = {
+			buildRules = (
+				);
+			buildSettings = {
+				COPY_PHASE_STRIP = "NO";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "YES";
+				GCC_OPTIMIZATION_LEVEL = "0";
+			};
+			isa = "PBXBuildStyle";
+			name = "Debug";
+		};
+		95E1EB2E5DDD587BE5B3E548 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = "YES";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "NO";
+			};
+			name = "Release";
+		};
+		26DE8D2AEA4B3714B41E931F = {
+			buildRules = (
+				);
+			buildSettings = {
+				COPY_PHASE_STRIP = "YES";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "NO";
+			};
+			isa = "PBXBuildStyle";
+			name = "Release";
+		};
+		2A951308CDB28F104D0A4BD2 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"8DB1DD96F65B1BF1FFC506E0",
+				"95E1EB2E5DDD587BE5B3E548");
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationIsName = "Debug";
+		};
+		91B15E841AA80083484172DE = {
+			buildStyles = (
+				"2C641C3335766025DD51B7BD",
+				"26DE8D2AEA4B3714B41E931F");
+			hasScannedForEncodings = 1;
+			isa = PBXProject;
+			mainGroup = "05596AB53D8D521C69802C27";
+			buildConfigurationList = "2A951308CDB28F104D0A4BD2";
+			projectDirPath = "";
+			targets = (
+				"2F4B7972889794A09B3A32AC");
+		};
+	};
+	rootObject = "91B15E841AA80083484172DE";
+}

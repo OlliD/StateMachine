@@ -1,0 +1,41 @@
+<!-- MENTION: only use lower-case characters in tagnames!!!  -->
+
+<Trialdata>
+	<data>
+		<Person>
+			<datum type= "date">-</datum>
+			<day type="date">-</day>
+			<gender type = "string">-</gender>
+			<vorname type = "string">-</vorname>
+			<name type = "string">-</name>
+			<montag type = "time">-</montag>
+			<dienstag type = "time">-</dienstag>
+			<mittwoch type = "time">-</mittwoch>
+			<donnerstag type = "time">-</donnerstag>
+			<freitag type = "time">-</freitag>
+			<samstag type = "time">-</samstag>
+			<sonntag type = "time">-</sonntag>
+			<regular_sport type = "string">-</regular_sport>
+			<sportrate type = "string">-</sportrate>
+			<bad_conditions type = "string">-</bad_conditions>
+			<muscle_problems type = "string">-</muscle_problems>
+			<dayofweek type = "string">-</dayofweek>
+			<longdays type = "string">-</longdays>
+		</Person>
+	</data>
+		<data>
+		<Widgets>
+			<startup type = "string">Willkommen beim Fitnessberater. Nehmen Sie das erste mal teil?</startup>
+			<dialog_2_1_1 type = "string">Sind Sie bereit?</dialog_2_1_1>
+			<dialog_2_1_4 type = "string">Sind Sie bereit?</dialog_2_1_4>
+			<dialog_2_1_5 type = "string">Eine Übung noch?</dialog_2_1_5>
+			<dialog_3_1_2_1 type = "string">Möchten Sie die Übung wiederholen?</dialog_3_1_2_1>
+			<fitness_tipp1>Wussten Sie schon, dass bei Gliederschmerzen viel Flüssigkeit, zum Beispiel Tees mit Weidenrinde oder Lindenblüten, getrunken werden sollte, um die Schmerzen zu lindern?</fitness_tipp1>
+			<fitness_tipp2>Wussten Sie schon, dass bei Heiserkeit, anders als bei normalen Halsschmerzen, scharfe Erkältungsbonbons vermieden werden sollten?</fitness_tipp2>
+			<fitness_tipp3>Wussten Sie schon, dass die so genannte Elektrotherapie bei schwacher Muskulatur sowie Gewebe- und Muskelschwund Abhilfe schaffen kann?</fitness_tipp3>
+			<fitness_tipp4>Wussten Sie schon, dass körperliche Betätigung sowohl die Erinnerungsleistung als auch die Konzentrationsfähigkeit steigern kann?</fitness_tipp4>
+			<fitness_tipp5>Wussten Sie schon, dass regelmäßige Bewegung das Risiko verringert, im Alter an Alzheimer zu erkranken?</fitness_tipp5>
+		</Widgets>
+	</data>
+
+</Trialdata>
